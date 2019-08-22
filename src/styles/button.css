@@ -1,0 +1,11 @@
+.btn {
+	color:#fff;
+}
+
+button.btn-primary {
+	background: #3A6FA2;
+}
+
+button.btn-gray {
+	background: #444444;
+}

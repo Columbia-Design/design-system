@@ -1,0 +1,12 @@
+html, body {
+  font-size: 16px;
+  font-family: Helvetica, "Lucida Grande", Arial, sans-serif;
+}
+
+figure {
+  padding: 1em;
+}
+
+figure.highlight {
+  background-color: #3f3f3f;
+}

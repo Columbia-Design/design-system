@@ -1,0 +1,14 @@
+header {
+  height: 120px;
+  padding: 1.5rem 0;
+}
+
+nav a {
+  padding: 0 1rem;
+}
+
+nav ul.secondary a {
+  height: 48px;
+  line-height: 32px;
+  display: block;
+}
