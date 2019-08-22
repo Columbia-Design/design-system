@@ -1,4 +1,4 @@
-# React App for building stating design system site
+# React App for building static design system site
 
 ## Up and Running
 

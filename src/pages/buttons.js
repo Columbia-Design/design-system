@@ -16,6 +16,7 @@ class Buttons extends React.Component {
 	const secondaryButtonElement = <Button class="btn btn-secondary" text="Secondary button"/>;
 	const activePrimaryButtonElement = <Button class="btn btn-primary active" text="Active Primary button"/>;
 	const grayButtonElement = <Button class="btn btn-gray" text="Gray button"/>;
+
     return (
       <div>
         <Helmet>
@@ -45,7 +46,7 @@ class Buttons extends React.Component {
 
 			<h2>Styles</h2>
 			<figure className="highlight">
-			<div><code>Place to hold styles</code></div>
+				<div><code>Place to hold styles</code></div>
 			</figure>
 
         </div>
