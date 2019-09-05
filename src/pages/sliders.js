@@ -70,13 +70,13 @@ class Sliders extends React.Component {
 
 			<h2>Markup</h2>
 			<figure className="highlight">
-				<figcaption>Code example</figcaption>
+				<figcaption>Code example oneline, not good</figcaption>
 				{/* <pre><code className="language-html" dangerouslySetInnerHTML={this.parseString(mainSliderString)}></code></pre> */}
 				<pre><code className="language-html">{ReactHtmlParser(prism.highlight(mainSliderString, prism.languages.html, 'html'))}</code></pre>
 			</figure>
 
 			<figure className="highlight">
-				<figcaption>Code example 2</figcaption>
+				<figcaption>Working code example multiple lines</figcaption>
 				<PrismCode
 					code={testString}
 					language="html"
