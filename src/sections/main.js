@@ -3,6 +3,7 @@ import Home from "../pages/home"
 import About from "../pages/about"
 import Buttons from "../pages/buttons"
 import Lists from "../pages/lists"
+import Sliders from "../pages/sliders"
 import { Route } from "react-router-dom"
 
 function Main() {
@@ -13,6 +14,7 @@ function Main() {
       <Route path="/about/" component={About} />
       <Route path="/components/buttons" component={Buttons} />
       <Route path="/components/lists" component={Lists} />
+      <Route path="/components/sliders" component={Sliders} />
     </main>
   )
 }

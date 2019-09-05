@@ -3,10 +3,10 @@ html, body {
   font-family: Helvetica, "Lucida Grande", Arial, sans-serif;
 }
 
-figure {
-  padding: 1em;
-}
-
-figure.highlight {
-  background-color: #3f3f3f;
+figure.highlight pre {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  height: auto !important;
 }

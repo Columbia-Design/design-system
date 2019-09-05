@@ -1,0 +1,60 @@
+.switch .wrapper {
+	display: inline-block;
+	height: 25px;
+	position: relative;
+	top: 6px;
+	width: 50px;
+}
+.switch .track {
+	-moz-transition: background, .6s;
+    -o-transition: background, .6s;
+    -webkit-transition: background, .6s;
+    transition: background, .6s;
+	background: #CCC;
+	border-radius: 9px;
+	height: 18px;
+	left: 4px;
+	position: absolute;
+	top: 4px;
+	width: 42px;
+}
+.switch .slider {
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.switch .slider:before {
+	background-color: #555;
+	border-radius: 13px;
+	content: "";
+	height: 25px;
+	left: 0;
+	position: absolute;
+	-moz-transition: left, .6s;
+    -o-transition: left, .6s;
+    -webkit-transition: left, .6s;
+    transition: left, .6s;
+	top: 0;
+	width: 25px;
+}
+.switch input {
+	height: 0;
+	opacity: 0;
+	width: 0;
+}
+.switch input:checked + .wrapper .track {
+	background-color: #C0CD3F;
+}
+.switch input:focus + .wrapper .track {
+	box-shadow: 0 0 1px #C0CD3F;
+}
+.switch input:checked + .wrapper .slider:before {
+	left: 50%;
+}
+
+.switch .text-indicator {
+	padding-left: 0.5em;
+}
