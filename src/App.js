@@ -11,7 +11,7 @@ import './styles/app.css';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={'/cu_design_system'}>
         <Header />
         <Main />
         <Footer />
