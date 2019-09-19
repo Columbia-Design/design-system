@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Slider from "../react_components/slider";
+import Slider from "../react-components/slider";
 import PrintComponent from "../util/print-component";
 
 

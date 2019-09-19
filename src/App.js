@@ -11,7 +11,7 @@ import './styles/sass/overrides.scss';
 class App extends Component {
   render() {
     return (
-      <Router basename={'/cu_design_system'}>
+      <Router basename={'/desing-system'}>
         <Header />
 				<Main />
 				<Footer />
