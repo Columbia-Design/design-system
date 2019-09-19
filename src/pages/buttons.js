@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Button from "../react_components/button";
-import PrintComponent from "../util/print_component";
+import PrintComponent from "../util/print-component";
 
 class Buttons extends React.Component {
   constructor(props) {

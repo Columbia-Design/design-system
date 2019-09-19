@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Slider from "../react_components/slider";
-import PrintComponent from "../util/print_component";
+import PrintComponent from "../util/print-component";
 
 
 class Sliders extends React.Component {

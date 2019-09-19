@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import renderHTML from 'react-render-html';
 import List from "../components/list";
-import PrintComponent from "../util/print_component";
+import PrintComponent from "../util/print-component";
 
 class Lists extends React.Component {
   constructor(props) {
