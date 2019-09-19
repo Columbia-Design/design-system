@@ -1,0 +1,15 @@
+/* will hold bootstrap variable overrides */
+
+// @toDO figure out how to custom compile with node-sass, (post build) for end-client just the ovverrides and component styles, excluding this site's css
+
+$blue: #0849A3;
+
+a {
+	color: $blue;
+}
+
+button {
+	background: $blue;
+}
+
+@import '~bootstrap/scss/bootstrap.scss';

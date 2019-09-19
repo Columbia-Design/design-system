@@ -1,7 +1,9 @@
 import React from 'react';
 import { hydrate } from 'react-dom';
 import { render } from 'react-snapshot';
-import 'bootstrap/dist/css/bootstrap.css';
+
+//import 'bootstrap/dist/css/bootstrap.css';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

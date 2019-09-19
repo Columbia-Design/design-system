@@ -8,11 +8,13 @@
     "framer-motion": "^1.5.0",
     "gh-pages": "^2.1.1",
     "glob": "^7.1.4",
+    "js-beautify": "^1.10.2",
+    "node-sass": "^4.12.0",
     "prismjs": "^1.17.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-html-parser": "^2.0.2",
     "react-render-html": "^0.6.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
@@ -25,6 +27,7 @@
     "eject": "react-scripts eject",
     "snap": "react-scripts build && react-snapshot",
     "gh-pages": "node publish-gh-pages",
+    "deploy": "react-scripts build && react-snapshot && node publish-gh-pages",
     "serve": "serve -s build"
   },
   "eslintConfig": {

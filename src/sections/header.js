@@ -5,9 +5,9 @@ import '../styles/header.css'
 
 function Header() {
   return (
-    <header role="banner" className="container">
+    <header role="banner" className="container-fluid">
       <nav className="nav">
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/" exact className="nav-link">
           <h1>Design System</h1>
         </NavLink>
         <ul className="nav justify-content-end col d-none d-md-flex secondary">

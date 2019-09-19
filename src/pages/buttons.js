@@ -1,13 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Button from "../react_components/button";
-
-import ReactDOMServer from 'react-dom/server';
+import PrintComponent from "../util/print_component";
 
 class Buttons extends React.Component {
   constructor(props) {
-	super(props);
-	this.state = {};
+		super(props);
+		this.state = {};
   }
 
   render(){
@@ -25,29 +24,21 @@ class Buttons extends React.Component {
         </Helmet>
         <div>
         	<h1>Buttons</h1>
-			<p>This page contains short list of availabe button elements</p>
+					<p>This page contains short list of availabe button elements</p>
 
-			<h2>Examples</h2>
-			<figure>
-				{primaryButtonElement}
-				{secondaryButtonElement}
-				{activePrimaryButtonElement}
-				{grayButtonElement}
-			</figure>
+					<h2>Examples</h2>
+					<figure>
+						{primaryButtonElement}
+						{secondaryButtonElement}
+						{activePrimaryButtonElement}
+						{grayButtonElement}
+					</figure>
 
-			<h2>Markup</h2>
-			<figure className="highlight">
-				<div><code>{ReactDOMServer.renderToStaticMarkup(primaryButtonElement)}</code></div>
-				<div><code>{ReactDOMServer.renderToStaticMarkup(secondaryButtonElement)}</code></div>
-				<div><code>{ReactDOMServer.renderToStaticMarkup(activePrimaryButtonElement)}</code></div>
-				<div><code>{ReactDOMServer.renderToStaticMarkup(grayButtonElement)}</code></div>
-			</figure>
-
-
-			<h2>Styles</h2>
-			<figure className="highlight">
-				<div><code>Place to hold styles</code></div>
-			</figure>
+					<h2>Markup</h2>
+					<PrintComponent component={primaryButtonElement} figcaption="Primary Button Element" language="html" />
+					<PrintComponent component={secondaryButtonElement} figcaption="Second Example" language="html" />
+					<PrintComponent component={activePrimaryButtonElement} figcaption="Third Example" language="html" />
+					<PrintComponent component={grayButtonElement} figcaption="Last Example" language="html" />
 
         </div>
       </div>
