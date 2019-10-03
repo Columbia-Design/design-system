@@ -7,6 +7,7 @@ import Home from "../pages/home"
 import About from "../pages/about"
 import Buttons from "../pages/buttons"
 import Lists from "../pages/lists"
+import Pagination from "../pages/pagination"
 import Sliders from "../pages/sliders"
 
 import NoMatch from "../pages/404"
@@ -23,6 +24,7 @@ function Main() {
           <Route path="/components/buttons" component={Buttons} />
           <Route path="/components/lists" component={Lists} />
           <Route path="/components/sliders" component={Sliders} />
+          <Route path="/components/pagination" component={Pagination} />
           <Route component={NoMatch} />
         </Switch>
       </main>
