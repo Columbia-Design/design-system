@@ -8,6 +8,7 @@ import About from "../pages/about"
 import Buttons from "../pages/buttons"
 import Lists from "../pages/lists"
 import Sliders from "../pages/sliders"
+import Alerts from "../pages/alerts"
 
 import NoMatch from "../pages/404"
 
@@ -23,6 +24,7 @@ function Main() {
           <Route path="/components/buttons" component={Buttons} />
           <Route path="/components/lists" component={Lists} />
           <Route path="/components/sliders" component={Sliders} />
+          <Route path="/components/alerts" component={Alerts} />
           <Route component={NoMatch} />
         </Switch>
       </main>
