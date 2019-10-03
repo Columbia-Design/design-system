@@ -12,4 +12,27 @@ button {
 	background: $blue;
 }
 
+// for alerts
+$cu-alert-warning:#C75000;
+.alert-cu-alert-warning {
+	background-color:$cu-alert-warning;
+	border-color:$cu-alert-warning;
+	color:white;
+	a[href]{
+		color:white;
+		text-decoration:underline;
+	}
+}
+
+$cu-alert-danger:#DC2A2A;
+.alert-cu-alert-danger {
+	background-color:$cu-alert-danger;
+	border-color:$cu-alert-danger;
+	color:white;
+	a[href]{
+		color:white;
+		text-decoration:underline;
+	}
+}
+
 @import '~bootstrap/scss/bootstrap.scss';

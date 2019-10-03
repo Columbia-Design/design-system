@@ -11,6 +11,9 @@ class Alerts extends React.Component {
   render(){
 
 	const defaultAlert = <Alert class="alert-secondary" text="This is the secondary alert style from Bootstrap"/>;
+	const successAlert = <Alert class="alert-success" text="This is the success alert style from Bootstrap"/>;
+	const warningAlert = <Alert class="alert-cu-alert-warning" text="This is the warning alert style from Bootstrap"/>;
+	const dangerAlert = <Alert class="alert-cu-alert-danger" text="This is the danger alert style from Bootstrap"/>;
 
     return (
       <div>
@@ -25,10 +28,16 @@ class Alerts extends React.Component {
 					<h2>Examples</h2>
 					<figure>
 						{defaultAlert}
+						{successAlert}
+						{warningAlert}
+						{dangerAlert}
 					</figure>
 
 					<h2>Markup</h2>
 					<PrintComponent component={defaultAlert} figcaption="Secondary Alert" language="html" />
+					<PrintComponent component={successAlert} figcaption="Success Alert" language="html" />
+					<PrintComponent component={warningAlert} figcaption="Warning Alert" language="html" />
+					<PrintComponent component={dangerAlert} figcaption="Danger Alert" language="html" />
 
         </div>
       </div>
