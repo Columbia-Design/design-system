@@ -38,13 +38,6 @@ class Pagination extends React.Component {
 					<h2>Markup</h2>
 					<PrintComponent component={Pagination2} language="html" plainHtml="true" figcaption="Page navigation with disabled and active states example markup" />
 
-
-
-					<h2>Styles</h2>
-					<figure className="highlight">
-						<div><code>Place to hold styles</code></div>
-					</figure>
-
         </div>
       </div>
     )
