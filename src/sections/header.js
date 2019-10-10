@@ -15,6 +15,7 @@ function Header() {
           <li className="nav-item"><NavLink to="/components/lists" className="nav-link" activeClassName="active">Lists</NavLink></li>
           <li className="nav-item"><NavLink to="/components/sliders" className="nav-link" activeClassName="active">Sliders</NavLink></li>
           <li className="nav-item"><NavLink to="/components/alerts" className="nav-link" activeClassName="active">Alerts</NavLink></li>
+          <li className="nav-item"><NavLink to="/components/pagination" className="nav-link" activeClassName="active">Pagination</NavLink></li>
           <li className="nav-item"><NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink></li>
         </ul>
       </nav>

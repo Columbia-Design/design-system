@@ -12,7 +12,7 @@ fs.copy('./build', './gh-pages', err =>{
 	const results = replace.sync({
 		files: globs,
 		from: [/href="\//g, /src="\//g],
-		to: ['href="/desing-system/', 'src="/desing-system/'],
+		to: ['href="/design-system/', 'src="/design-system/'],
 		countMatches: true
 	});
 
