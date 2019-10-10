@@ -12,42 +12,5 @@ button {
 	background: $blue;
 }
 
-// for alerts
-// TODO still need icons
-$alert-cuprimary:#E9E9E9;
-.alert-cuprimary {
-	background-color:$alert-cuprimary;
-	border-color:$alert-cuprimary;
-}
-$alert-cusuccess:#6B8E23;
-.alert-cusuccess {
-	background-color:$alert-cusuccess;
-	border-color:$alert-cusuccess;
-	color:white;
-	a[href]{
-		color:white;
-		text-decoration:underline;
-	}
-}
-$alert-cuwarning:#C75000;
-.alert-cuwarning {
-	background-color:$alert-cuwarning;
-	border-color:$alert-cuwarning;
-	color:white;
-	a[href]{
-		color:white;
-		text-decoration:underline;
-	}
-}
-$alert-cudanger:#DC2A2A;
-.alert-cudanger {
-	background-color:$alert-cudanger;
-	border-color:$alert-cudanger;
-	color:white;
-	a[href]{
-		color:white;
-		text-decoration:underline;
-	}
-}
-
+@import 'cu-alerts';
 @import '~bootstrap/scss/bootstrap.scss';
