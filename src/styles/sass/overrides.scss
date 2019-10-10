@@ -2,14 +2,6 @@
 
 // @toDO figure out how to custom compile with node-sass, (post build) for end-client just the ovverrides and component styles, excluding this site's css
 
-$blue: #0849A3;
-
-a {
-	color: $blue;
-}
-
-button {
-	background: $blue;
-}
-
+@import 'cu-colors';
+@import 'custom-variables';
 @import '~bootstrap/scss/bootstrap.scss';
