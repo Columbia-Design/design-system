@@ -1,7 +1,5 @@
 import React from 'react'
 
-import '../styles/slider.css';
-
 class Slider extends React.Component {
   constructor(props){
     super(props);
