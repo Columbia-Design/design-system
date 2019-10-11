@@ -7,8 +7,10 @@ import Home from "../pages/home"
 import About from "../pages/about"
 import Buttons from "../pages/buttons"
 import Lists from "../pages/lists"
+import Typography from "../pages/typography"
 import Pagination from "../pages/pagination"
 import Sliders from "../pages/sliders"
+import Alerts from "../pages/alerts"
 
 import NoMatch from "../pages/404"
 
@@ -24,9 +26,11 @@ function Main() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/typography" component={Typography} />
           <Route path="/components/buttons" component={Buttons} />
           <Route path="/components/lists" component={Lists} />
           <Route path="/components/sliders" component={Sliders} />
+          <Route path="/components/alerts" component={Alerts} />
           <Route path="/components/pagination" component={Pagination} />
           <Route component={NoMatch} />
         </Switch>
