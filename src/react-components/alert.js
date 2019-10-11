@@ -7,7 +7,7 @@ class Alert extends React.Component {
   render() {
     const classes = `alert ${this.props.class}`;
     return (
-      <div class={classes} role="alert">
+      <div className={classes} role="alert">
         {this.props.text}
       </div>
     );
