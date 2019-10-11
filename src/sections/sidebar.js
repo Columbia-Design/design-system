@@ -12,7 +12,9 @@ class SidebarCheck extends React.Component {
   renderSidebar() {
     //available props {this.props.location.pathname}
     return (
-      <div role="navigation" className="sidebar container-fluid"></div>
+      <div role="navigation" className="sidebar container-fluid">
+
+      </div>
     )
   }
   render() { //only render sidebar when needed

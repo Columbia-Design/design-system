@@ -12,7 +12,10 @@ import Sliders from "../pages/sliders"
 
 import NoMatch from "../pages/404"
 
+import Routes from "../routes"
+
 function Main() {
+  console.log("routes obj: ", Routes);
   return (
     <React.Fragment>
       <Sidebar />
