@@ -2,37 +2,26 @@ import React from 'react'
 import { Route, Switch } from "react-router-dom"
 
 import Sidebar from './sidebar';
-
-import Home from "../pages/home"
-import About from "../pages/about"
-import Buttons from "../pages/buttons"
-import Lists from "../pages/lists"
-import Typography from "../pages/typography"
-import Pagination from "../pages/pagination"
-import Sliders from "../pages/sliders"
-import Alerts from "../pages/alerts"
-
-import NoMatch from "../pages/404"
-
-import Routes from "../routes"
+import Global from "../global"
 
 function Main() {
-  console.log("routes obj: ", Routes);
+  let routesArray = [];
+
+  Global.pages.forEach((item) => {
+    if(item.items){
+      item.items.map((item) => routesArray.push(item));
+    }
+    routesArray.push(item);
+  });
+
+  const routes = routesArray.map((item, index) => <Route key={index} path={item.path} exact={item.exact} component={item.component} />);
+
   return (
     <React.Fragment>
       <Sidebar />
-      <main role="main" className="container-fluid">
-        {/* this is where router will input react componets */}
+      <main role="main" className="main container-fluid">
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/typography" component={Typography} />
-          <Route path="/components/buttons" component={Buttons} />
-          <Route path="/components/lists" component={Lists} />
-          <Route path="/components/sliders" component={Sliders} />
-          <Route path="/components/alerts" component={Alerts} />
-          <Route path="/components/pagination" component={Pagination} />
-          <Route component={NoMatch} />
+          { routes }
         </Switch>
       </main>
     </React.Fragment>

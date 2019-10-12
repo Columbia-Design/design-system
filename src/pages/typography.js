@@ -54,9 +54,7 @@ class Typography extends React.Component {
       <div>
         <Helmet>
           <title>Typography</title>
-          <meta name="description" content="Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
-
-" />
+          <meta name="description" content="Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more." />
         </Helmet>
         <div>
         	<h1>Typography</h1>
@@ -89,7 +87,7 @@ class Typography extends React.Component {
 
 					<PrintComponent component={InlineText} language="html" plainHtml="true" figcaption="Markup" />
 
-					
+
 					<h2>Abbreviations</h2>
 					<p>Stylized implementation of HTML’s {`<abbr>`} element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
 					<p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
@@ -108,7 +106,7 @@ class Typography extends React.Component {
 
 					<PrintComponent component={Blockquotes} language="html" plainHtml="true" figcaption="Markup" />
 
-					
+
 
 
 

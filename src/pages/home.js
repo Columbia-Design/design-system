@@ -6,7 +6,7 @@ function Home() {
     <div>
       <Helmet>
         <title>Columbia University Design System</title>
-        <meta name="description" content="design systems homepage" />
+        <meta name="description" content="" />
         <link rel="canonical" href="https://brand.columbia.edu" />
       </Helmet>
       <div>

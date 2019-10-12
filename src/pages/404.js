@@ -8,7 +8,6 @@ function About() {
       <Helmet>
         <title>Not Found Page</title>
         <meta name="description" content="this page could not be found" />
-        <link rel="canonical" href="https://brand.columbia.edu/404" />
       </Helmet>
       <div>
         <h1>Not Found</h1>
