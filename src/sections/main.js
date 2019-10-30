@@ -1,31 +1,36 @@
 import React from 'react'
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, withRouter} from "react-router-dom"
 
-import Sidebar from './sidebar';
 import Global from "../global"
 
-function Main() {
-  let routesArray = [];
+class MainComponent extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {};
+  }
 
-  Global.pages.forEach((item) => {
-    if(item.items){
-      item.items.map((item) => routesArray.push(item));
-    }
-    routesArray.push(item);
-  });
+  render() {
+    let routesArray = [];
 
-  const routes = routesArray.map((item, index) => <Route key={index} path={item.path} exact={item.exact} component={item.component} />);
+    Global.pages.forEach((item) => {
+      if(item.items){
+        item.items.map((item) => routesArray.push(item));
+      }
+      routesArray.push(item);
+    });
 
-  return (
-    <React.Fragment>
-      <Sidebar />
-      <main role="main" className="main container-fluid">
-        <Switch>
-          { routes }
-        </Switch>
+    const routes = routesArray.map((item, index) => <Route key={index} path={item.path} exact={item.exact} component={item.component} />);
+
+    console.log("location prop in main.js: ", this.props.location);
+    let mainClass = (this.props.location.pathname.indexOf('/components') === 0) ? 'sidebar' : 'no-sidebar';
+    return (
+      <main role="main" className={`main container-fluid ${mainClass}`}>
+        <Switch>{ routes }</Switch>
       </main>
-    </React.Fragment>
-  )
+    )
+  }
 }
+
+const Main = withRouter(MainComponent);
 
 export default Main

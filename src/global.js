@@ -1,4 +1,4 @@
-// this file will hold global site variables such as routes inlcuding component and site pages
+// this file will hold global site variables such as routes inlcuding custom developed page components
 import Home from "./pages/home"
 import About from "./pages/about"
 import Components from "./pages/components"

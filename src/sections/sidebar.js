@@ -2,12 +2,12 @@ import React from 'react'
 import { withRouter, NavLink } from "react-router-dom"
 import Global from "../global"
 
-class SidebarCheck extends React.Component {
+class SidebarComponent extends React.Component {
   constructor(props){
     super(props);
     this.state = {
       active: 0,
-    }
+    };
     this.renderSidebar = this.renderSidebar.bind(this);
   }
   renderSidebar() {
@@ -38,7 +38,6 @@ class SidebarCheck extends React.Component {
   }
 }
 
-const RenderSidebar = withRouter(SidebarCheck);
+const Sidebar = withRouter(SidebarComponent);
 
-
-export default RenderSidebar
+export default Sidebar
