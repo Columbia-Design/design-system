@@ -1,7 +1,5 @@
 import React from 'react'
 
-import '../styles/button.css';
-
 class Button extends React.Component {
   constructor(props){
     super(props);
@@ -16,8 +14,9 @@ class Button extends React.Component {
   }
   render() {
     const classes = (this.state.active) ? `active ${this.props.class}` : this.props.class;
+    const disabled = (this.props.disabled) ? true : false;
     return (
-      <button type="button" className={classes} onClick={this.click}>
+      <button type="button" disabled={disabled} className={classes} onClick={this.click}>
         {this.props.text}
       </button>
     );

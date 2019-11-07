@@ -11,10 +11,9 @@ class Buttons extends React.Component {
 
   render(){
 
-	const primaryButtonElement = <Button class="btn btn-primary" text="Primary button"/>;
-	const secondaryButtonElement = <Button class="btn btn-secondary" text="Secondary button"/>;
-	const activePrimaryButtonElement = <Button class="btn btn-primary active" text="Active Primary button"/>;
-	const grayButtonElement = <Button class="btn btn-gray" text="Gray button"/>;
+		const buttonPrimary = <Button class="btn btn-primary" text="Primary button"/>;
+		const buttonSecondary = <Button class="btn btn-secondary" text="Secondary button"/>;
+		const buttonDisabled = <Button class="btn btn-primary" text="Disabled button" disabled="true"/>;
 
     return (
       <div>
@@ -28,17 +27,15 @@ class Buttons extends React.Component {
 
 					<h2>Examples</h2>
 					<figure>
-						{primaryButtonElement}
-						{secondaryButtonElement}
-						{activePrimaryButtonElement}
-						{grayButtonElement}
+						{buttonPrimary} &nbsp;
+						{buttonSecondary} &nbsp;
+						{buttonDisabled}
 					</figure>
 
 					<h2>Markup</h2>
-					<PrintComponent component={primaryButtonElement} figcaption="Primary Button Element" language="html" />
-					<PrintComponent component={secondaryButtonElement} figcaption="Second Example" language="html" />
-					<PrintComponent component={activePrimaryButtonElement} figcaption="Third Example" language="html" />
-					<PrintComponent component={grayButtonElement} figcaption="Last Example" language="html" />
+					<PrintComponent component={buttonPrimary} figcaption="Primary Button" language="html" />
+					<PrintComponent component={buttonSecondary} figcaption="Secondary Button" language="html" />
+					<PrintComponent component={buttonDisabled} figcaption="Disabled Button" language="html" />
 
         </div>
       </div>
