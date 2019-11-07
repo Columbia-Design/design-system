@@ -5,6 +5,7 @@ import Components from "./pages/components"
 import Buttons from "./pages/buttons"
 import Typography from "./pages/typography"
 import Pagination from "./pages/pagination"
+import Pullquote from "./pages/pullquote"
 import Sliders from "./pages/sliders"
 import Alerts from "./pages/alerts"
 import NoMatch from "./pages/404"
@@ -49,6 +50,12 @@ const Global = {
 					'name': "Pagination",
 					'component': Pagination,
 					'path': '/components/pagination',
+					'exact': false,
+				},
+				{
+					'name': "Pullquote",
+					'component': Pullquote,
+					'path': '/components/pullquote',
 					'exact': false,
 				},
 				{
