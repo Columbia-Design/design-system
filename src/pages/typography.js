@@ -41,6 +41,25 @@ const Blockquotes = `
 </blockquote>
 `.trim();
 
+const Lists = `
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+`.trim();
 
 class Typography extends React.Component {
   constructor(props) {
@@ -107,8 +126,12 @@ class Typography extends React.Component {
 					<PrintComponent component={Blockquotes} language="html" plainHtml="true" figcaption="Markup" />
 
 
+					<h2>Lists</h2>
+					<figure>
+						{renderHTML(Lists)}
+					</figure>
 
-
+					<PrintComponent component={Lists} language="html" plainHtml="true" figcaption="Markup" />
 
 
         </div>
