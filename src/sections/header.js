@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom"
 
 import Global from "../global"
 
-import '../styles/header.css'
-
 function Header() {
   const links = Global.pages.map((item, index) => (item.display) ? <li key={index} className="nav-item"><NavLink to={item.path} className="nav-link" activeClassName="active">{item.name}</NavLink></li> : null);
 

@@ -2,10 +2,12 @@ import React from 'react';
 import { hydrate } from 'react-dom';
 import { render } from 'react-snapshot';
 
-//import 'bootstrap/dist/css/bootstrap.css';
-
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+//import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/fontawesome.css';
+import '@fortawesome/fontawesome-free/css/solid.css';
 
 const rootElement = document.getElementById('root');
 

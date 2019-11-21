@@ -6,7 +6,6 @@ import Main from './sections/main';
 import Footer from './sections/footer';
 import Sidebar from './sections/sidebar';
 
-import './styles/app.css';
 import './styles/sass/overrides.scss';
 
 class App extends Component {

@@ -2,6 +2,7 @@
 import Home from "./pages/home"
 import About from "./pages/about"
 import Components from "./pages/components"
+import Accordions from "./pages/accordions"
 import Buttons from "./pages/buttons"
 import Typography from "./pages/typography"
 import Pagination from "./pages/pagination"
@@ -34,6 +35,12 @@ const Global = {
 			'exact': false,
 			'display': true,
 			'items': [
+				{
+					'name': "Accordions",
+					'component': Accordions,
+					'path': '/components/accordions',
+					'exact': false,
+				},
 				{
 					'name': "Buttons",
 					'component': Buttons,
