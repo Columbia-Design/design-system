@@ -4,6 +4,7 @@ import About from "./pages/about"
 import Components from "./pages/components"
 import Accordions from "./pages/accordions"
 import Buttons from "./pages/buttons"
+import Heroes from "./pages/heroes"
 import Typography from "./pages/typography"
 import Pagination from "./pages/pagination"
 import Pullquote from "./pages/pullquote"
@@ -42,15 +43,21 @@ const Global = {
 					'exact': false,
 				},
 				{
+					'name': "Alerts",
+					'component': Alerts,
+					'path': '/components/alerts',
+					'exact': false,
+				},
+				{
 					'name': "Buttons",
 					'component': Buttons,
 					'path': '/components/buttons',
 					'exact': false,
 				},
 				{
-					'name': "Alerts",
-					'component': Alerts,
-					'path': '/components/alerts',
+					'name': "Heroes",
+					'component': Heroes,
+					'path': '/components/heroes',
 					'exact': false,
 				},
 				{
