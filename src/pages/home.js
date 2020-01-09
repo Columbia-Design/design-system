@@ -16,11 +16,29 @@ function Home() {
 					Design System
 				</h1>
 				<p className="lead">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Welcome. This design system is a collection of modular design elements meant to provide digital designers and developers with ready-to-use code that is responsive, accessible, and in keeping with Columbia web development, design, security, and identity guidelines.
 				</p>
-				<p className="lead">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
+
+				<p>The system can be used on any Columbia digital project and includes:</p>
+
+				<ul>
+					<li>
+						a layout system
+					</li>
+					<li>
+						a browsable collection of patterns
+					</li>
+					<li>
+						documentation of all elements
+					</li>
+					<li>
+						examples of how each element is used in a current project
+					</li>
+				</ul>
+
+				<p>The system is available to all Columbia faculty, staff, and students.</p>
+
+				<p>If you have questions about access or would like to contribute to the library, email the Design System team.</p>
 
 				<div className="row mx-n2">
 					<div className="col-md px-2">
