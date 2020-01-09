@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from './sections/header';
 import Main from './sections/main';
@@ -11,7 +11,7 @@ import './styles/sass/overrides.scss';
 class App extends Component {
   render() {
     return (
-      <Router basename={'/design-system'}>
+      <Router basename='/'>
         <Header />
 				<div className="container-fluid">
 					<div className="row flex-xl-nowrap">
