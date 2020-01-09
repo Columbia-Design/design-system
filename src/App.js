@@ -11,7 +11,7 @@ import './styles/sass/overrides.scss';
 class App extends Component {
   render() {
     return (
-      <Router basename='/'>
+      <Router basename={'/design-system'}>
         <Header />
 				<div className="container-fluid">
 					<div className="row flex-xl-nowrap">

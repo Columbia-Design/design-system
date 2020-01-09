@@ -9,27 +9,25 @@ fs.copy('./build', './gh-pages', err =>{
   if(err) return console.error(err);
   let globs = ['gh-pages/*.html', 'gh-pages/*/*.html', 'gh-pages/asset-manifest.json'];
 
-	const results = replace.sync({
-		files: globs,
-		from: [/href="\//g, /src="\//g],
-		to: ['href="/design-system/', 'src="/design-system/'],
-		countMatches: true
+	// const results = replace.sync({
+	// 	files: globs,
+	// 	from: [/href="\//g, /src="\//g],
+	// 	to: ['href="/design-system/', 'src="/design-system/'],
+	// 	countMatches: true
+	// });
+
+	// console.log(results);
+
+
+	ghpages.publish('./gh-pages', {
+		branch: 'gh-pages'
+	}, function(err) {
+		if(err){
+			console.log("Something went wrong while publishing to gh-pages branch: ", err);
+		} else {
+			console.log("all good publishing");
+		}
 	});
-
-	console.log(results);
-
-	if(results) {
-
-		ghpages.publish('./gh-pages', {
-			branch: 'gh-pages'
-		}, function(err) {
-			if(err){
-				console.log("Something went wrong while publishing to gh-pages branch: ", err);
-			} else {
-				console.log("all good publishing");
-			}
-		});
-	}
 
 });
 
