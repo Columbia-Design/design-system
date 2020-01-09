@@ -13,8 +13,12 @@ class App extends Component {
     return (
       <Router basename={'/design-system'}>
         <Header />
-        <Sidebar />
-        <Main />
+				<div className="container-fluid">
+					<div className="row flex-xl-nowrap">
+						<Sidebar />
+						<Main />
+					</div>
+				</div>
 				<Footer />
       </Router>
     );
