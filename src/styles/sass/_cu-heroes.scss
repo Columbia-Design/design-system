@@ -1,24 +1,117 @@
 $break-hero:62rem;
 .hero {
-	background-color:var(--dark);
-	color:var(--white);
 	position:relative;
-	img {
-		position:relative;
-		z-index:1;
+	@media (min-width:$break-hero) {
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-end;
+		min-height:30vw;
+		padding:1rem;
 	}
-	.hero-body {
-		text-align:center;
+	.hero-img {
+		height:30vw;
+		overflow:hidden;
+		position:relative;
+		width:100%;
+		z-index:1;
+		img {
+			object-fit:cover;
+			object-position:50% 50%;
+			display:block;
+			width:100%;
+			height:100%;
+			@media (prefers-reduced-motion:no-preference) {
+				animation:img-in 1s ease-in-out;
+			}
+		}
 		@media (min-width:$break-hero) {
-			bottom:1rem;
-			left:5rem;
+			height:100%;
+			left:0;
 			position:absolute;
-			right:5rem;
-			z-index:2;;
+			top:0;
+			width:100%;
 		}
 	}
-	.hero-header {
-		font-size:3rem;
-		line-height:3.5rem;
+	.hero-body {
+		margin-left:auto;
+		margin-right:auto;
+		max-width:800px;
+		position:relative;
+		text-align:center;
+		z-index:2;
+		@media (prefers-reduced-motion:no-preference) {
+			animation:body-in 1s ease-in-out;
+		}
+		h1 {
+			font-size:3rem;
+			line-height:3.5rem;
+		}
+		.lead {
+			font-size:2rem;
+			line-height:2.5rem;
+		}
+		@media (min-width:$break-hero) {
+			background-color:rgba(0,0,0,0.5);
+			color:white;
+		}
 	}
+	&.hero-topleft {
+		@media (min-width:$break-hero) {
+			justify-content:flex-start;
+		}
+		.hero-body {
+			margin-left:0;
+			text-align:left;
+		}
+	}
+	&.hero-topright {
+		@media (min-width:$break-hero) {
+			justify-content:flex-start;
+		}
+		.hero-body {
+			margin-right:0;
+			text-align:right;
+		}
+	}
+	&.hero-bottomleft {
+		.hero-body {
+			margin-left:0;
+			text-align:left;
+		}
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  $animation-timing:1ms;
+  .animate-wipe {
+    transition:all $animation-timing;
+    &.not-inview {
+      opacity:1;
+    }
+    &.inview {
+      animation:none;
+    }
+  }
+}
+
+// define img in animation
+@keyframes img-in {
+  0% {
+    transform:scale(1.25);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+// define body in animation
+@keyframes body-in {
+  0% {
+		opacity:0;
+    top:-2rem;
+  }
+  100% {
+		opacity:1;
+    top:0;
+  }
 }
