@@ -79,6 +79,12 @@ $break-hero:62rem;
 			text-align:left;
 		}
 	}
+	&.hero-bottomright {
+		.hero-body {
+			margin-right:0;
+			text-align:right;
+		}
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
