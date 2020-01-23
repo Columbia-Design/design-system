@@ -2,6 +2,7 @@
 import Home from "./pages/home";
 import About from "./pages/about";
 import Accordions from "./pages/accordions";
+import BrandBars from "./pages/brand-bar";
 import Buttons from "./pages/buttons";
 import Typography from "./pages/typography";
 import Images from "./pages/images";
@@ -49,6 +50,12 @@ const Global = {
 				'component': Accordions,
 				'path': '/components',
 				'exact': true,
+			},
+			{
+				'name': "Brand Bar",
+				'component': BrandBars,
+				'path': '/components/brand-bar',
+				'exact': false,
 			},
 			{
 				'name': "Buttons",
