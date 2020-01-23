@@ -9,6 +9,7 @@ import Images from "./pages/images";
 import Pagination from "./pages/pagination";
 import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
+import Breadcrumb from "./pages/breadcrumb";
 import Alerts from "./pages/alerts";
 import NoMatch from "./pages/404";
 
@@ -56,6 +57,12 @@ const Global = {
 				'name': "Alerts",
 				'component': Alerts,
 				'path': '/components/alerts',
+				'exact': false,
+			},
+			{
+				'name': "Breadcrumb",
+				'component': Breadcrumb,
+				'path': '/components/breadcrumb',
 				'exact': false,
 			},
 			{
