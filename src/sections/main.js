@@ -21,10 +21,13 @@ class MainComponent extends React.Component {
 
     const routes = routesArray.map((item, index) => <Route key={index} path={item.path} exact={item.exact} component={item.component} />);
 
-    console.log("location prop in main.js: ", this.props.location);
-    let mainClass = (this.props.location.pathname.indexOf('/components') === 0) ? 'sidebar' : 'no-sidebar';
+    // console.log("location prop in main.js: ", this.props.location);
+    let mainClass = (
+			this.props.location.pathname.indexOf('/components') === 0 ||
+			this.props.location.pathname.indexOf('/content') === 0
+		) ? 'ds-main container-fluid col-md-9 py-4 with-sidebar' : 'ds-main container py-4 no-sidebar';
     return (
-      <main role="main" className={`main container-fluid ${mainClass}`}>
+      <main role="main" className={`${mainClass}`}>
         <Switch>{ routes }</Switch>
       </main>
     )

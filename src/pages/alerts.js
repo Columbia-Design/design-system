@@ -10,10 +10,10 @@ class Alerts extends React.Component {
 
   render(){
 
-	const defaultAlert = <Alert class="alert-cuprimary" text="This is the primary alert style"/>;
-	const successAlert = <Alert class="alert-cusuccess" text="This is the success alert style"/>;
-	const warningAlert = <Alert class="alert-cuwarning" text="This is the warning alert style"/>;
-	const dangerAlert = <Alert class="alert-cudanger" text="This is the danger alert style"/>;
+	const defaultAlert = <Alert class="alert-cuprimary" text="This is the primary alert style. <a href='#'>Link to more information</a>"/>;
+	const successAlert = <Alert class="alert-cusuccess" text="This is the success alert style. <a href='#'>Link to the documentation</a>"/>;
+	const warningAlert = <Alert class="alert-cuwarning" text="This is the warning alert style. <a href='#'>Link to the warning document</a>"/>;
+	const dangerAlert = <Alert class="alert-cudanger" text="This is the danger alert style. <a href='#'>Link to the alert document</a>"/>;
 
     return (
       <div>

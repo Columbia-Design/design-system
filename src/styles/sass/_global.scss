@@ -1,0 +1,443 @@
+html, body {
+  font-size: 16px;
+}
+
+figure.highlight pre {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  height: auto !important;
+}
+
+nav a {
+  padding: 0 1rem;
+}
+
+nav ul.secondary a {
+  height: 48px;
+  line-height: 32px;
+  display: block;
+}
+
+#navbar {
+	display: flex;
+}
+
+.navbar-brand {
+	width: 40px;
+}
+
+.ds-masthead {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	h1 {
+		font-size: 4rem;
+    line-height: 1;
+		margin-bottom: 20px;
+	}
+}
+
+.ds-sidebar {
+	border-right: 1px solid rgba(0,0,0,0.1);
+	margin-right: 0;
+	padding: 10px 20px 40px;
+
+	.active {
+		font-weight: bold;
+	}
+}
+
+main.ds-main {
+	padding-bottom: 40px !important;
+
+	&.sidebar {
+		margin-left: 0;
+	}
+
+	&.no-sidebar {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+
+
+/* from common.css */
+
+#nav-wrapper {
+	font-size: 14px;
+  position: relative;
+  z-index: 5;
+  min-height: 42px;
+  background: #1d497d;
+}
+#nav-wrapper a {
+  display: inline-block;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 11px 0;
+  font-weight: 300;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#cu-footer {
+  background: #1d497d;
+  line-height: 27px;
+  padding: 15px 0 25px;
+  color: #FFF;
+}
+
+#cu-footer .a11y .fa {
+  font-size: 1.5em;
+  font-weight: 700 !important;
+}
+
+footer .crown-container {
+  float: left;
+  width: 27px;
+  margin-top: -2px;
+}
+
+#cu-footer .cu-crown {
+  width: 30px;
+  height: 26px;
+}
+#cu-footer .cu-crown .st0 {
+  fill: #FFF !important;
+}
+#cu-footer .cu-crown .st1 {
+  fill: #00294a !important;
+}
+
+
+#cu-footer-links {
+	font-size: 14px;
+}
+
+#cu-footer-links a {
+  color: #FFF;
+}
+
+#cu-footer a:hover,
+#footer-cu-homepage:hover .brand {
+  color: #75aadb;
+}
+#footer-cu-homepage:hover .st0 {
+  fill: #75aadb !important;
+}
+
+
+#brand-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#site-name {
+  font-size: 26px;
+  line-height: 1em;
+  letter-spacing: 1px;
+  display: block;
+  margin: 5px 0 0 2px;
+  
+  padding: 0;
+}
+#site-name-mobile {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+#site-name a,
+#site-name-mobile a {
+  color: #1d497d;
+}
+
+#nav-wrapper .container {
+  position: relative;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: none;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background: none;
+}
+nav a:hover span.l,
+nav li:hover > a > span.l,
+nav a:focus span.l,
+nav a.active span.l {
+  text-decoration: none;
+  border-bottom: 2px solid #FFF;
+}
+
+#nav-wrapper .navbar-nav {
+  float: right;
+}
+
+#nav-wrapper .nav > li {
+  position: relative;
+}
+#nav-wrapper .nav > li > div > a {
+  padding: 11px 13px;
+  padding: 11px 1.3vw;
+}
+#nav-wrapper .nav > li.active > div > a {
+  background: #00294a;
+}
+
+#nav-wrapper .nav > li > div > ul {
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  background: #00294a;
+  padding: 5px 0;
+  width: 15em;
+}
+#nav-wrapper .nav > li > div > ul li {
+  list-style: none;
+  display: block;
+}
+#nav-wrapper .nav > li > div > ul a {
+  display: block;
+  text-transform: none;
+  font-size: 1.2em;
+  padding: 5px 13px;
+  padding: 5px 1.3vw;
+}
+
+h1 {
+  font-size: 4.286em;
+  line-height: 1em;
+  color: #0e5a90;
+}
+.body {
+  font-size: 1.2em;
+  line-height: 1.286em;
+}
+
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3em;
+  }
+  
+  #brand-wrapper {
+    float: left;
+    width: calc(100% - 100px);
+    text-align: center;
+    padding: 0;
+    line-height: 42px;
+    height: 42px;
+  }    
+
+  #brand-wrapper .cu-crown {
+    display: none;
+  }
+  #brand-wrapper .cu-crown .st1 {
+    fill: #1d497d;
+  }
+  #brand-wrapper .cu-crown .st0 {
+    fill: #FFF;
+  }
+
+  .brand {
+    float: none;
+    font-size: 16px; /*4.5vw*/
+    margin: 0 auto;
+    color: #FFF;
+  }
+
+  #cu-footer-links {
+    margin-top: 10px;
+  }
+  #cu-footer-links span {
+    margin-right: 20px;
+  }
+
+} /* /@media (max-width: 767px) */
+
+@media (min-width: 768px) and (max-width: 991px) { /* grid size: sm */
+  #footer-cu-homepage {
+    margin: 0 auto;
+  }
+  #cu-footer-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+} /* /@media (min-width: 768px) and (max-width: 991px) */
+
+
+@media (min-width: 768px) {
+  header {
+    background: #FFF;
+  }
+
+  #footer-cu-homepage {
+    background: url("../../assets/img/cu-logo.svg") no-repeat;
+    display: block;
+    width: 327px;
+    height: 48px;
+    text-indent: -2000px;
+    overflow: hidden;
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  #footer-cu-homepage .brand,
+  #footer-cu-homepage .st0 {
+    -webkit-transition: all 0.2s ease-out;  
+    -moz-transition: all 0.2s ease-out;  
+    -o-transition: all 0.2s ease-out;  
+    transition: all 0.2s ease-out;    
+  }
+
+  footer .brand {
+    color: #FFF;
+    float: left;
+    font-size: 1.4em;
+    padding-left: 5px;
+  }
+  #brand-wrapper .cu-crown {
+    width: 50px;
+    height: 44px;
+    float: left;  
+  }
+
+  #cu-footer-links span::after {
+    content: "\B7";
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #cu-footer-links span:last-child::after {
+    content: "";
+    margin: 0;
+  }
+
+  #cu-footer .cu-crown {
+    float: left;
+    margin-top: -3px;
+  }
+
+} /* /@media (min-width: 768px) */
+
+@media (min-width: 992px) { /* grid size: md */
+  #cu-footer-links {
+    text-align: right;
+  }
+} /* /@media (min-width: 992px) */
+
+
+
+/* from search.css */
+
+body {
+  color: #222222;
+}
+
+#nav-wrapper a {
+  color: #FFF;
+}
+
+.nav > li > a {
+  padding: 12px 15px 5px;
+}
+
+.nav-lined-container {
+  border: 1px solid rgb(235, 235, 235);
+  border-style: solid none;
+}
+.nav-lined li a {
+	border-bottom: 7px solid #FFF;
+}
+.nav-lined li.ds-home-link a {
+	align-items: center;
+	color: #1d497d;
+	display: flex;
+	font-weight: bold;
+	text-decoration: none;;
+
+	&.active {
+		border-bottom-color: #1d497d;
+	}
+}
+.navbar-brand {
+	margin-bottom: -15px;
+	margin-top: -21px;
+}
+
+.nav-lined .active {
+  border-bottom: 7px solid #337ab7;
+}
+
+.cu-brand {
+  fill: #fff;
+  margin: 14px 0 0;
+}
+.cu-brand:hover {
+  opacity: 0.5;
+}
+
+/* Breakpoints */
+
+@media (max-width: 767px) {
+  #brand-wrapper {
+    float: right;
+    text-align: center;
+    padding-left: 25px;
+    margin: 0 65px 0 -100%;
+  }
+
+  .nav-lined-container {
+    position: relative;
+  }
+  .nav-lined-container .container {
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-lined-container::after {
+    content: "";
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60%;
+    width: 30px;
+    z-index: 1;
+  }
+
+  .nav > li > a {
+    margin: 0;
+  }
+  .nav > li:last-child > a {
+    margin-right: 15px;
+  }
+
+} /* /@media (max-width: 767px) */
+
+@media (min-width: 768px) {
+  main {
+    padding-bottom: 20px;
+  }
+  .nav > li > a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .nav-lined li {
+    float: left;
+  }
+
+} /* /@media (min-width: 768px) */

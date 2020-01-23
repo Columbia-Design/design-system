@@ -4,12 +4,14 @@ $alert-cuprimary:#E9E9E9;
 .alert-cuprimary {
 	background-color:$alert-cuprimary;
 	border-color:$alert-cuprimary;
+	padding:0.75rem !important;
 }
 $alert-cusuccess:#6B8E23;
 .alert-cusuccess {
 	background-color:$alert-cusuccess;
 	border-color:$alert-cusuccess;
 	color:white;
+	padding:0.75rem !important;
 	a[href]{
 		color:white;
 		text-decoration:underline;
@@ -18,8 +20,13 @@ $alert-cusuccess:#6B8E23;
 $alert-cuwarning:#C75000;
 .alert-cuwarning {
 	background-color:$alert-cuwarning;
+	background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M569.517%20440.013C587.975%20472.007%20564.806%20512%20527.94%20512H48.054c-36.937%200-59.999-40.055-41.577-71.987L246.423%2023.985c18.467-32.009%2064.72-31.951%2083.154%200l239.94%20416.028zM288%20354c-25.405%200-46%2020.595-46%2046s20.595%2046%2046%2046%2046-20.595%2046-46-20.595-46-46-46zm-43.673-165.346l7.418%20136c.347%206.364%205.609%2011.346%2011.982%2011.346h48.546c6.373%200%2011.635-4.982%2011.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884%200-12.356%205.78-11.981%2012.654z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
+	background-position:top 0.875rem left 0.75rem;
+	background-repeat:no-repeat;
+	background-size:1.25rem auto;
 	border-color:$alert-cuwarning;
 	color:white;
+	padding:0.75rem 0.75rem 0.75rem 2.375rem !important;
 	a[href]{
 		color:white;
 		text-decoration:underline;
@@ -28,8 +35,13 @@ $alert-cuwarning:#C75000;
 $alert-cudanger:#DC2A2A;
 .alert-cudanger {
 	background-color:$alert-cudanger;
+	background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M13%2C0C5.82%2C0%2C0%2C5.82%2C0%2C13s5.82%2C13%2C13%2C13s13-5.82%2C13-13S20.18%2C0%2C13%2C0z%20M19.82%2C6.18%20%20c3.43%2C3.43%2C3.67%2C8.67%2C1.08%2C12.35L7.47%2C5.1C11.15%2C2.51%2C16.39%2C2.75%2C19.82%2C6.18z%20M6.18%2C19.82C2.75%2C16.39%2C2.51%2C11.15%2C5.1%2C7.47%20%20L18.53%2C20.9C14.85%2C23.49%2C9.61%2C23.25%2C6.18%2C19.82z%22%2F%3E%3C%2Fsvg%3E");
+	background-position:top 0.875rem left 0.75rem;
+	background-repeat:no-repeat;
+	background-size:1.25rem auto;
 	border-color:$alert-cudanger;
 	color:white;
+	padding:0.75rem 0.75rem 0.75rem 2.375rem !important;
 	a[href]{
 		color:white;
 		text-decoration:underline;

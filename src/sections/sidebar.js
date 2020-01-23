@@ -22,18 +22,21 @@ class SidebarComponent extends React.Component {
     });
 
     return (
-      <div role="navigation" className="sidebar container-fluid">
-        <ul className="nav flex-column">
-          { sidebarLinks.map((item, index) => <li key={index} className="nav-item"><NavLink to={item.path} className="nav-link" activeClassName="active">{item.name}</NavLink></li>) }
+      <div role="navigation" className="col-md-3 col-xl-2 sidebar ds-sidebar container-fluid">
+        <ul className="nav flex-md-column">
+          { sidebarLinks.map((item, index) => <li key={index} className="nav-item"><NavLink to={item.path} exact={item.exact} className="nav-link" activeClassName="active">{item.name}</NavLink></li>) }
         </ul>
       </div>
     )
   }
   render() {
-    //only render sidebar when needed, for right now just the /components path
+    //only render sidebar when needed, for right now just the /components, /content path
     // modify pathMatch rule if sidebar is needed elsewhere
-    console.log("location: ", this.props.location);
-    let pathMatch = (this.props.location.pathname.indexOf('/components') === 0) ? true : false;
+    // console.log("location: ", this.props.location);
+    let pathMatch = (
+			this.props.location.pathname.indexOf('/components') === 0 ||
+			this.props.location.pathname.indexOf('/content') === 0	
+		) ? true : false;
     return (pathMatch) ? this.renderSidebar() : null;
   }
 }

@@ -1,34 +1,53 @@
-import React from 'react'
-import { NavLink } from "react-router-dom"
+import React from 'react';
+import { NavLink } from "react-router-dom";
 
-import Global from "../global"
-
-import '../styles/header.css'
+import Global from "../global";
+import CuCrown from  "../react-components/cu-crown";
 
 function Header() {
-  const links = Global.pages.map((item, index) => (item.display) ? <li key={index} className="nav-item"><NavLink to={item.path} className="nav-link" activeClassName="active">{item.name}</NavLink></li> : null);
+  const links = Global.pages.map((item, index) => (item.display) ? <li key={index} className="nav-item"><NavLink to={item.path} exact={item.exact} className="nav-link" activeClassName="active">{item.name}</NavLink></li> : null);
 
   return (
-    <header role="banner" className="container-fluid">
-      <nav className="nav">
-        <NavLink to="/" exact className="nav-link">
-          <h1>Columbia University Design System</h1>
-        </NavLink>
-        <ul className="nav justify-content-end col d-none d-md-flex secondary">
-          {links}
-        </ul>
-      </nav>
-    </header>
-  )
+		<header role="banner">
+			<div id="nav-wrapper">
+				<div className="container-fluid">
+
+					<div className="row">
+						<div className="col-sm-11">
+							<a href="http://www.columbia.edu">Columbia University in the City of New York</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="brand-wrapper" className="d-block d-sm-none">
+				<div id="brand-wrapper-inner">
+					<NavLink to="/" exact className="nav-link">
+						<span className="brand">Columbia University Design System</span>
+					</NavLink>
+				</div>
+			</div>
+
+			<div className="nav-lined-container">
+				<div id="navbar" className="container-fluid">
+
+					<ul className="nav nav-lined">
+						<li className="nav-item ds-home-link">
+							<NavLink to="/" exact>
+								<span className="navbar-brand">
+									{CuCrown()}
+								</span>
+								Design System
+							</NavLink>
+						</li>
+						{links}
+					</ul>
+				</div>
+			</div>
+		</header>
+
+	)
 }
 
 export default Header
-
-
-// <li className="nav-item"><NavLink to="/typography" className="nav-link" activeClassName="active">Typography</NavLink></li>
-// <li className="nav-item"><NavLink to="/components/buttons" className="nav-link" activeClassName="active">Buttons</NavLink></li>
-// <li className="nav-item"><NavLink to="/components/lists" className="nav-link" activeClassName="active">Lists</NavLink></li>
-// <li className="nav-item"><NavLink to="/components/sliders" className="nav-link" activeClassName="active">Sliders</NavLink></li>
-// <li className="nav-item"><NavLink to="/components/alerts" className="nav-link" activeClassName="active">Alerts</NavLink></li>
-// <li className="nav-item"><NavLink to="/components/pagination" className="nav-link" activeClassName="active">Pagination</NavLink></li>
-// <li className="nav-item"><NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink></li>
