@@ -1,6 +1,5 @@
 {
   "name": "cu-design-system",
-  "homepage": "https://columbia-design.github.io/design-system",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
