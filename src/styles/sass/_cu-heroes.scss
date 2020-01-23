@@ -53,6 +53,9 @@ $break-hero:62rem;
 		@media (min-width:$break-hero) {
 			background-color:rgba(0,0,0,0.5);
 			color:white;
+			h1 {
+				color:white;
+			}
 		}
 	}
 	&.hero-topleft {
