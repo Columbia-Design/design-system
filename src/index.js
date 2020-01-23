@@ -7,9 +7,12 @@ import * as serviceWorker from './serviceWorker';
 
 import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min.js';
-import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 import '@fortawesome/fontawesome-free/css/solid.css';
+
+//custom jquery stuff
+import './jquery.js';
 
 const rootElement = document.getElementById('root');
 
