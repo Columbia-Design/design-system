@@ -1,5 +1,6 @@
 {
   "name": "cu-design-system",
+  "homepage": "https://columbia-design.github.io/design-system",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,8 +9,10 @@
     "framer-motion": "^1.7.2",
     "gh-pages": "^2.2.0",
     "glob": "^7.1.6",
+    "jquery": "^3.4.1",
     "js-beautify": "^1.10.3",
     "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

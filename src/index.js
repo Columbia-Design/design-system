@@ -5,7 +5,9 @@ import { render } from 'react-snapshot';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-//import 'bootstrap/dist/css/bootstrap.css';
+import 'jquery/dist/jquery.min.js';
+import 'popper.js/dist/popper.min.js';
+import 'bootstrap/dist/js/bootstrap.js';
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 import '@fortawesome/fontawesome-free/css/solid.css';
 
