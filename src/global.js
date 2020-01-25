@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Accordions from "./pages/accordions";
 import Buttons from "./pages/buttons";
+import Heroes from "./pages/heroes"
 import Typography from "./pages/typography";
 import Images from "./pages/images";
 import Pagination from "./pages/pagination";
@@ -11,6 +12,7 @@ import Sliders from "./pages/sliders";
 import Alerts from "./pages/alerts";
 import ProgressBars from "./pages/progressbars";
 import NoMatch from "./pages/404";
+
 
 const Global = {
 	'name': "Columbia University Design System",
@@ -52,15 +54,21 @@ const Global = {
 				'exact': true,
 			},
 			{
+				'name': "Alerts",
+				'component': Alerts,
+				'path': '/components/alerts',
+				'exact': false,
+			},
+			{
 				'name': "Buttons",
 				'component': Buttons,
 				'path': '/components/buttons',
 				'exact': false,
 			},
 			{
-				'name': "Alerts",
-				'component': Alerts,
-				'path': '/components/alerts',
+				'name': "Heroes",
+				'component': Heroes,
+				'path': '/components/heroes',
 				'exact': false,
 			},
 			{

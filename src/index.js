@@ -5,9 +5,14 @@ import { render } from 'react-snapshot';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-//import 'bootstrap/dist/css/bootstrap.css';
+import 'jquery/dist/jquery.min.js';
+import 'popper.js/dist/popper.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 import '@fortawesome/fontawesome-free/css/solid.css';
+
+//custom jquery stuff
+import './jquery.js';
 
 const rootElement = document.getElementById('root');
 
