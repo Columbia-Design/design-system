@@ -1,0 +1,55 @@
+.progressbar {
+	--progressbg:white;
+	align-items:flex-start;
+	display:flex;
+	justify-content:space-between;
+	padding:0;
+	position:relative;
+	&::before {
+		border-bottom:1px #e6e6e6 solid;
+		content:"";
+		display:block;
+		position:absolute;
+		height:1rem;
+		width:100%;
+		z-index:1;
+	}
+	.progress-item {
+		align-items:center;
+		background-color:var(--progressbg);
+		display:flex;
+		flex-wrap:wrap;
+		margin:0;
+		padding:0 0.5rem 0 1rem;
+		position:relative;
+		text-align:center;
+		z-index:2;
+		&:first-child {
+			padding-left:0;
+		}
+		&:last-child {
+			padding-right:0;
+		}
+		&::before {
+			background-color:#ccc;
+			border-radius:50%;
+			content:"";
+			display:inline-block;
+			margin:0 auto;
+			height:1.75em;
+			width:1.75rem;
+			z-index:2;
+		}
+		a,
+		span {
+			background-color:var(--progressbg);
+			margin:0 auto;
+			padding:0 0.5rem;
+			position:relative;
+			z-index:2;
+		}
+	}
+	.progress-item + .progress-item {
+		margin-left:2rem;
+	}
+}

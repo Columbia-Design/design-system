@@ -5,11 +5,11 @@ class ProgressBar extends React.Component {
   render() {
 
 		const completeItem = <ProgressItem state="complete" text="Item Complete" href="#"/>;
-		const currentItem = <ProgressItem state="current" text="Current Item" href="#"/>;
+		const currentItem = <ProgressItem state="current" text="Current Item"/>;
 		const upcomingItem = <ProgressItem state="disabled" text="Upcoming Item"/>;
 	
     return (
-      <ul class="progressbar">
+      <ul className="progressbar">
 				{completeItem}
 				{completeItem}
 				{currentItem}
