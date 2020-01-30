@@ -9,6 +9,7 @@ import Images from "./pages/images";
 import Pagination from "./pages/pagination";
 import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
+import Tables from "./pages/tables";
 import Alerts from "./pages/alerts";
 import NoMatch from "./pages/404";
 
@@ -37,6 +38,11 @@ const Global = {
 				'name': "Images",
 				'component': Images,
 				'path': '/content/images',
+				'exact': false,
+			}, {
+				'name': "Tables",
+				'component': Tables,
+				'path': '/content/tables',
 				'exact': false,
 			}],
 		},
