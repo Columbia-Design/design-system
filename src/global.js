@@ -12,6 +12,7 @@ import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
 import Alerts from "./pages/alerts";
 import ProgressBars from "./pages/progressbars";
+import Dropdown from "./pages/dropdown";
 import NoMatch from "./pages/404";
 
 
@@ -69,6 +70,12 @@ const Global = {
 				'name': "Buttons",
 				'component': Buttons,
 				'path': '/components/buttons',
+				'exact': false,
+			},
+			{
+				'name': "Drop Down",
+				'component': Dropdown,
+				'path': '/components/dropdown',
 				'exact': false,
 			},
 			{
