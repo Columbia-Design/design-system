@@ -11,18 +11,21 @@ class Accordions extends React.Component {
 
   render(){
 	const ac1 =  [
-		{	"id": "smaple-accordion-one",
+		{	"id": "simple",
+			"active": 1,
 			"title": "Deadline and Decisions",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{	
-			"id": "smaple-accordion-one",
+			"id": "simple",
+			"active": 1,
 			"title": "Admissions Advisement",
 			"innerHeading": "Inner Heading",
 			"text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		{
-			"id": "smaple-accordion-one",
+			"id": "simple",
+			"active": 0,
 			"title": "Course Requirements",
 			"innerHeading": "Subject",
 			"text": "Sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -31,18 +34,21 @@ class Accordions extends React.Component {
 
 	const ac2 =  [
 		{
-			"id": "sample-accordion-two",
+			"id": "numeric",
+			"active": 1,
 			"title": "Shut down and unplug your machine",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		{
-			"id": "sample-accordion-two",
+			"id": "numeric",
+			"active": 0,
 			"title": "Remove Screws",
 			"innerHeading": "Be sure to remove all screws",
 			"text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		{
-			"id": "sample-accordion-two",
+			"id": "numeric",
+			"active": 0,
 			"title": "Take out component",
 			"innerHeading": "Subject",
 			"text": "Sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -68,11 +74,16 @@ class Accordions extends React.Component {
 
 			<figure>
 				{accordionPlain}
-				{accordionNumeric}
 			</figure>
 
 			<h2>Markup</h2>
 			<PrintComponent component={accordionPlain} figcaption="Simple Accordion" language="html" />
+
+			<figure>
+				{accordionNumeric}
+			</figure>
+
+			<h2>Markup</h2>
 			<PrintComponent component={accordionNumeric} figcaption="Numeric Accordion" language="html" />
 
         </div>
