@@ -10,6 +10,7 @@ import Pagination from "./pages/pagination";
 import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
+import Breadcrumb from "./pages/breadcrumb";
 import Alerts from "./pages/alerts";
 import ProgressBars from "./pages/progressbars";
 import Dropdown from "./pages/dropdown";
@@ -64,6 +65,12 @@ const Global = {
 				'name': "Alerts",
 				'component': Alerts,
 				'path': '/components/alerts',
+				'exact': false,
+			},
+			{
+				'name': "Breadcrumb",
+				'component': Breadcrumb,
+				'path': '/components/breadcrumb',
 				'exact': false,
 			},
 			{
