@@ -11,6 +11,7 @@ import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
 import Alerts from "./pages/alerts";
+import ProgressBars from "./pages/progressbars";
 import NoMatch from "./pages/404";
 
 
@@ -86,6 +87,12 @@ const Global = {
 				'name': "Pullquote",
 				'component': Pullquote,
 				'path': '/components/pullquote',
+				'exact': false,
+			},
+			{
+				'name': "Progress Bar",
+				'component': ProgressBars,
+				'path': '/components/progressbars',
 				'exact': false,
 			},
 			{
