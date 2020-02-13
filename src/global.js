@@ -11,6 +11,7 @@ import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
 import Alerts from "./pages/alerts";
+import Modal from "./pages/modal";
 import NoMatch from "./pages/404";
 
 
@@ -74,6 +75,12 @@ const Global = {
 				'name': "Heroes",
 				'component': Heroes,
 				'path': '/components/heroes',
+				'exact': false,
+			},
+			{
+				'name': "Modal",
+				'component': Modal,
+				'path': '/components/modal',
 				'exact': false,
 			},
 			{

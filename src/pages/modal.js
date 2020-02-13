@@ -258,7 +258,7 @@ const TablesExample7 = `
 </table>`.trim();
 
 
-class Tables extends React.Component {
+class Modal extends React.Component {
   constructor(props) {
 		super(props);
 		this.state = {};
@@ -269,11 +269,11 @@ class Tables extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>Tables</title>
+          <title>Modal</title>
           <meta name="description" content="Documentation and examples for opting images into responsive behavior" />
         </Helmet>
         <div>
-        	<h1>Tables</h1>
+        	<h1>Modal</h1>
 					<p>Documentation and examples for opt-in styling of tables.</p>
 
 
@@ -330,4 +330,4 @@ class Tables extends React.Component {
 
 }
 
-export default Tables
+export default Modal
