@@ -3,259 +3,86 @@ import { Helmet } from "react-helmet";
 import renderHTML from 'react-render-html';
 import PrintComponent from "../util/print-component";
 
-const TablesExample1 = `
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>`.trim();
+const ModalExample1 = `
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>`.trim();
 
-const TablesExample2 = `
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>`.trim();
+const ModalExample2 = `
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
 
-const TablesExample3 = `
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>`.trim();
 
-<table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>`.trim();
+const ModalExample3 = `
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
 
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Large modal</h4>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+    </div>
+  </div>
+</div>
 
-const TablesExample4 = `
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>`.trim();
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
 
-const TablesExample5 = `
-<table class="table table-striped table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>`.trim();
-
-const TablesExample6 = `
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>`.trim();
-
-const TablesExample7 = `
-<table class="table table-bordered table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>`.trim();
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Small modal</h4>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+    </div>
+  </div>
+</div>`.trim();
 
 
 class Modal extends React.Component {
@@ -274,53 +101,30 @@ class Modal extends React.Component {
         </Helmet>
         <div>
         	<h1>Modal</h1>
-					<p>Documentation and examples for opt-in styling of tables.</p>
+					<p>Use modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
 
-
-					<h2>Examples</h2>
-					<p>Just add the base class <code>{`.table`}</code> to any <code>{`<table>`}</code></p>
+					<h2>Modal Components</h2>
+					<p>Below is a static modal example. Included are the modal header, modal body (required for padding), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
 					<figure>
-						{renderHTML(TablesExample1)}
+						{renderHTML(ModalExample1)}
 					</figure>
-					<PrintComponent component={TablesExample1} language="html" plainHtml="true" figcaption="Markup" />
+					<PrintComponent component={ModalExample1} language="html" plainHtml="true" figcaption="Markup" />
 
-					<p>You can also invert the colors—with light text on dark backgrounds—with <code>{`.table-dark.`}</code></p>
+					<h2>Live demo</h2>
+					<p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
 					<figure>
-						{renderHTML(TablesExample2)}
+						{renderHTML(ModalExample2)}
 					</figure>
-					<PrintComponent component={TablesExample2} language="html" plainHtml="true" figcaption="Markup" />
+					<PrintComponent component={ModalExample2} language="html" plainHtml="true" figcaption="Markup" />
 
 
-					<p>Similar to tables and dark tables, use the modifier classes <code>{`.thead-light`}</code> or <code>{`.thead-dark`}</code> to make <code>{`<thead>`}</code>s appear light or dark gray.</p>
+					<h2>Optional sizes</h2>
+					<p>Modals have two optional sizes, available via modifier classes to be placed on a <code>{`.modal-dialog`}</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
 					<figure>
-						{renderHTML(TablesExample3)}
+						{renderHTML(ModalExample3)}
 					</figure>
-					<PrintComponent component={TablesExample3} language="html" plainHtml="true" figcaption="Markup" />
+					<PrintComponent component={ModalExample3} language="html" plainHtml="true" figcaption="Markup" />
 
-					<h2>Striped rows</h2>
-					<p>Use <code>{`.table-striped`}</code> to add zebra-striping to any table row within the <code>{`<tbody>`}</code>.</p>
-					<figure>
-						{renderHTML(TablesExample4)}
-					</figure>
-					<PrintComponent component={TablesExample4} language="html" plainHtml="true" figcaption="Markup" />
-
-					<figure>
-						{renderHTML(TablesExample5)}
-					</figure>
-					<PrintComponent component={TablesExample5} language="html" plainHtml="true" figcaption="Markup" />
-
-
-					<h2>Bordered table</h2>
-					<p>Add <code>{`.table-bordered`}</code> for borders on all sides of the table and cells.</p>
-					<figure>
-						{renderHTML(TablesExample6)}
-					</figure>
-					<PrintComponent component={TablesExample6} language="html" plainHtml="true" figcaption="Markup" />
-					
-					<figure>
-						{renderHTML(TablesExample7)}
-					</figure>
-					<PrintComponent component={TablesExample7} language="html" plainHtml="true" figcaption="Markup" />
 
 
         </div>

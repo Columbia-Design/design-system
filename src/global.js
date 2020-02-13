@@ -25,7 +25,14 @@ const Global = {
 			'component': Home,
 			'path': '/',
 			'exact': true,
-			'display': false,
+			'display': false
+		},
+		{
+			'name': "About",
+			'component': About,
+			'path': '/about',
+			'exact': false,
+			'display': true,
 		},
 		{
 			'name': "Content",
@@ -123,13 +130,6 @@ const Global = {
 				'exact': false,
 			}
 		]},
-		{
-			'name': "About",
-			'component': About,
-			'path': '/about',
-			'exact': false,
-			'display': true,
-		},
 		{
 			'name': "404",
 			'component': NoMatch,
