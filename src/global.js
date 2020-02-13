@@ -10,8 +10,11 @@ import Pagination from "./pages/pagination";
 import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
+import Breadcrumb from "./pages/breadcrumb";
 import Alerts from "./pages/alerts";
 import Modal from "./pages/modal";
+import ProgressBars from "./pages/progressbars";
+import Dropdown from "./pages/dropdown";
 import NoMatch from "./pages/404";
 
 
@@ -66,9 +69,21 @@ const Global = {
 				'exact': false,
 			},
 			{
+				'name': "Breadcrumb",
+				'component': Breadcrumb,
+				'path': '/components/breadcrumb',
+				'exact': false,
+			},
+			{
 				'name': "Buttons",
 				'component': Buttons,
 				'path': '/components/buttons',
+				'exact': false,
+			},
+			{
+				'name': "Drop Down",
+				'component': Dropdown,
+				'path': '/components/dropdown',
 				'exact': false,
 			},
 			{
@@ -93,6 +108,12 @@ const Global = {
 				'name': "Pullquote",
 				'component': Pullquote,
 				'path': '/components/pullquote',
+				'exact': false,
+			},
+			{
+				'name': "Progress Bar",
+				'component': ProgressBars,
+				'path': '/components/progressbars',
 				'exact': false,
 			},
 			{
