@@ -1,9 +1,9 @@
-// this file will hold global site variables such as routes inlcuding custom developed page components
+// this file exports pages and custom components as one glogal variable
 import Home from "./pages/home";
 import About from "./pages/about";
 import Accordions from "./pages/accordions";
 import Buttons from "./pages/buttons";
-import Heroes from "./pages/heroes"
+import Heroes from "./pages/heroes";
 import Typography from "./pages/typography";
 import Images from "./pages/images";
 import Pagination from "./pages/pagination";
