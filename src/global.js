@@ -12,6 +12,7 @@ import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
 import Breadcrumb from "./pages/breadcrumb";
 import Alerts from "./pages/alerts";
+import Modal from "./pages/modal";
 import ProgressBars from "./pages/progressbars";
 import Dropdown from "./pages/dropdown";
 import NoMatch from "./pages/404";
@@ -24,7 +25,14 @@ const Global = {
 			'component': Home,
 			'path': '/',
 			'exact': true,
-			'display': false,
+			'display': false
+		},
+		{
+			'name': "About",
+			'component': About,
+			'path': '/about',
+			'exact': false,
+			'display': true,
 		},
 		{
 			'name': "Content",
@@ -92,6 +100,12 @@ const Global = {
 				'exact': false,
 			},
 			{
+				'name': "Modal",
+				'component': Modal,
+				'path': '/components/modal',
+				'exact': false,
+			},
+			{
 				'name': "Pagination",
 				'component': Pagination,
 				'path': '/components/pagination',
@@ -116,13 +130,6 @@ const Global = {
 				'exact': false,
 			}
 		]},
-		{
-			'name': "About",
-			'component': About,
-			'path': '/about',
-			'exact': false,
-			'display': true,
-		},
 		{
 			'name': "404",
 			'component': NoMatch,

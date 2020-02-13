@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import renderHTML from 'react-render-html';
 import PrintComponent from "../util/print-component";
-import logoBlack from "../assets/img/logo-black.jpg";
 
 const TablesExample1 = `
 <table class="table">

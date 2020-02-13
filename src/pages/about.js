@@ -5,15 +5,37 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title>About Page</title>
+        <title>About Columbia Design System</title>
         <meta name="description" content="about design systems our mission" />
         <link rel="canonical" href="https://brand.columbia.edu/about" />
       </Helmet>
-      <div>
-        <h1>About</h1>
-        
+      <div className="ds-masthead pl-md-5">
+        <h1>About Columbia Design System</h1>
+        <h2>Who</h2>
+				<p>Four University groups collaborated to build this system: Columbia University Information Technology, Office of Communications and Public Affairs, Columbia College Information Technology, and Columbia Creative.</p>
+				<p>But we’re always looking for partners; <a href="#">learn how to contribute to the system</a>.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h2>What</h2>
+				<p>A foundational collection of modular digital components, layouts, design elements, and styling that is responsive, accessible, secure, on-brand, and platform-agnostic</p>
+				<p>
+					Current version: 1.0<br />
+					Next scheduled release: July 1, 2020
+				</p>
+
+				<h2>Why</h2>
+				<p>Columbia Design System complies with University branding, development, security, and accessibility policies. Utilizing it means saving time and money on design, development, branding, and user testing.</p>
+					
+				<h2>Where</h2>
+				<p>Right here. Check back often for updates, and here are more Columbia digital resources:</p>
+				<ul>
+					<li><a href="https://sites.columbia.edu">Columbia Sites</a> offers modern, affordable, easy-to-use websites for University research, academic, and administrative groups</li>
+					<li><a href="https://accessibility.columbia.edu">Accessibility.columbia.edu</a> provides information about physical and digital accessibility across Columbia’s campuses</li>
+					<li>View branding guidelines and download a logo at <a href="https://visualidentity.columbia.edu">visualidentity.columbia.edu</a></li>
+					<li><a href="https://usability.columbia.edu">Usability.columbia.edu</a> offers strategies and best practices for creating user-centered digital experiences</li>
+				</ul>
+
+				<h2>Questions?</h2>
+				<p>Email the team at <a href="mailto:designsystem@columbia.edu">designsystem@columbia.edu</a>.</p>
       </div>
     </div>
   )
