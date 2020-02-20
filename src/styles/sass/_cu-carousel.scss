@@ -1,0 +1,16 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-size:50% 50% !important;
+	border-radius:50%;
+	height:0 !important;
+	padding-top:50%;
+	width:50% !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	&:hover {
+		span:first-child {
+			background-color:rgba(0,0,0,0.25);
+		}
+	}
+}
