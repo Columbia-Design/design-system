@@ -4,7 +4,7 @@ import About from "./pages/about";
 import Accordions from "./pages/accordions";
 import Buttons from "./pages/buttons";
 import Heroes from "./pages/heroes";
-import Carousels from "./pages/carousels";
+import CuCarousels from "./pages/cu-carousels";
 import Typography from "./pages/typography";
 import Images from "./pages/images";
 import Pagination from "./pages/pagination";
@@ -90,8 +90,8 @@ const Global = {
 			},
 			{
 				'name': "Carousel",
-				'component': Carousels,
-				'path': '/components/carousels',
+				'component': CuCarousels,
+				'path': '/components/cu-carousels',
 				'exact': false,
 			},
 			{
