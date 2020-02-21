@@ -24,4 +24,31 @@
 		height:15px;
 		width:15px;
 	}
+	&.carousel-indicators-below {
+		.carousel-inner {
+			margin-bottom:50px;
+		}
+		.carousel-indicators {
+			bottom:-50px;
+			li {
+				background-color:#808080;
+				&.active {
+					position:relative;
+					&::before {
+						box-sizing:border-box;
+						border:2px white solid;
+						border-radius:50%;
+						background-color:#333;
+						content:"";
+						display:block;
+						height:13px;
+						left:1px;
+						position:absolute;
+						top:1px;
+						width:13px;
+					}
+				}
+			}
+		}
+	}
 }

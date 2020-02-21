@@ -6,7 +6,7 @@ import PrintComponent from "../util/print-component";
 class Carousels extends React.Component {
   render(){
 		const Carousel1 = `
-			<div id="uniqueCarouselID" class="carousel cu-carousel slide" data-ride="carousel">
+			<div id="uniqueCarouselID" class="carousel cu-carousel carousel-indicators-below slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#uniqueCarouselID" data-slide-to="0" class="active"></li>
 					<li data-target="#uniqueCarouselID" data-slide-to="1"></li>
