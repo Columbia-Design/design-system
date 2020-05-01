@@ -1,17 +1,14 @@
 {
   "name": "cu-design-system",
-  "homepage": "https://columbia-design.github.io/design-system",
+  "homepage": "https://designsystem.columbia.edu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.1",
     "css-to-string-loader": "^0.1.3",
     "framer-motion": "^1.7.2",
-    "gh-pages": "^2.2.0",
-    "glob": "^7.1.6",
     "jquery": "^3.4.1",
     "js-beautify": "^1.10.3",
-    "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
@@ -20,8 +17,7 @@
     "react-helmet": "^5.2.1",
     "react-render-html": "^0.6.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
-    "replace-in-file": "^4.3.1"
+    "react-scripts": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,8 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "snap": "react-scripts build && react-snapshot",
-    "gh-pages": "node publish-gh-pages",
-    "deploy": "react-scripts build && react-snapshot && node publish-gh-pages",
+    "deploy": "react-scripts build && react-snapshot && gh-pages -d build",
     "serve": "serve -s build"
   },
   "eslintConfig": {
@@ -50,6 +45,8 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.14.0",
     "react-snapshot": "^1.3.0",
     "serve": "^11.3.0"
   }

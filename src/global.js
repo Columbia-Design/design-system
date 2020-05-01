@@ -1,4 +1,4 @@
-// this file exports pages and custom components as one glogal variable
+// this file exports pages and custom components as one global variable
 import Home from "./pages/home";
 import About from "./pages/about";
 import Accordions from "./pages/accordions";

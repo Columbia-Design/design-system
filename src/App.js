@@ -6,12 +6,12 @@ import Main from './sections/main';
 import Footer from './sections/footer';
 import Sidebar from './sections/sidebar';
 
-import './styles/sass/includes.scss';
+import './styles/sass/app_includes.scss';
 
 class App extends Component {
   render() {
     return (
-      <Router basename={'/design-system'}>
+      <Router>
         <Header />
 				<div className="container-fluid">
 					<div className="row flex-xl-nowrap">
