@@ -1,6 +1,7 @@
 // this file exports pages and custom components as one global variable
 import Home from "./pages/home";
 import About from "./pages/about";
+import GettingStarted from "./pages/gettingstarted";
 import Accordions from "./pages/accordions";
 import Buttons from "./pages/buttons";
 import Heroes from "./pages/heroes";
@@ -31,6 +32,13 @@ const Global = {
 			'name': "About",
 			'component': About,
 			'path': '/about',
+			'exact': false,
+			'display': true,
+		},
+		{
+			'name': "Getting Started",
+			'component': GettingStarted,
+			'path': '/gettingstarted',
 			'exact': false,
 			'display': true,
 		},
