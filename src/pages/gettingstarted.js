@@ -8,7 +8,7 @@ function GettingStarted() {
             <Helmet>
                 <title>Getting Started</title>
                 <meta name="description" content="How to get started" />
-                <link rel="canonical" href="https://designsystem.columbia.edu/getting_started" />
+                <link rel="canonical" href="https://designsystem.columbia.edu/start" />
             </Helmet>
             <div className="ds-masthead pl-md-5">
                 <h1>Getting Started</h1>
@@ -30,12 +30,12 @@ function GettingStarted() {
 
                 <div className="row mx-n2">
                     <div className="col-md px-2">
-                        <Link to="/developer" className="btn btn-lg btn-outline-primary w-100 mb-3">
+                        <Link to="/start/developer" className="btn btn-lg btn-outline-primary w-100 mb-3">
                             Read the Developer Guide
                         </Link>
                     </div>
                     <div className="col-md px-2">
-                        <Link to="/designer" className="btn btn-lg btn-outline-primary w-100 mb-3">
+                        <Link to="/start/designer" className="btn btn-lg btn-outline-primary w-100 mb-3">
                             Read the Designer Guide
                         </Link>
                     </div>

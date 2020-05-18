@@ -2,6 +2,8 @@
 import Home from "./pages/home";
 import About from "./pages/about";
 import GettingStarted from "./pages/gettingstarted";
+import Developer from "./pages/developer";
+import Designer from "./pages/designer";
 import Accordions from "./pages/accordions";
 import Buttons from "./pages/buttons";
 import Heroes from "./pages/heroes";
@@ -38,9 +40,20 @@ const Global = {
 		{
 			'name': "Getting Started",
 			'component': GettingStarted,
-			'path': '/gettingstarted',
+			'path': '/start',
 			'exact': false,
 			'display': true,
+			'items': [{
+				'name': "Developer Guide",
+				'component': Developer,
+				'path': '/start/developer',
+				'exact': false,
+			}, {
+				'name': "Designer Gide",
+				'component': Designer,
+				'path': '/start/designer',
+				'exact': false,
+			}],
 		},
 		{
 			'name': "Content",
