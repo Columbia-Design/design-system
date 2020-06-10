@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
+import {Link} from "react-router-dom";
 
 function About() {
   return (
@@ -13,7 +14,7 @@ function About() {
         <h1>About Columbia Design System</h1>
         <h2>Who</h2>
 				<p>Four University groups collaborated to build this system: Columbia University Information Technology, Office of Communications and Public Affairs, Columbia College Information Technology, and Columbia Creative.</p>
-				<p>But we’re always looking for partners; <a href="#">learn how to contribute to the system</a>.</p>
+				<p>But we’re always looking for partners; <Link to="/contribute">learn how to contribute to the system</Link>.</p>
 
 				<h2>What</h2>
 				<p>A foundational collection of modular digital components, layouts, design elements, and styling that is responsive, accessible, secure, on-brand, and platform-agnostic</p>
@@ -29,9 +30,7 @@ function About() {
 				<p>Right here. Check back often for updates, and here are more Columbia digital resources:</p>
 				<ul>
 					<li><a href="https://sites.columbia.edu">Columbia Sites</a> offers modern, affordable, easy-to-use websites for University research, academic, and administrative groups</li>
-					<li><a href="https://accessibility.columbia.edu">Accessibility.columbia.edu</a> provides information about physical and digital accessibility across Columbia’s campuses</li>
 					<li>View branding guidelines and download a logo at <a href="https://visualidentity.columbia.edu">visualidentity.columbia.edu</a></li>
-					<li><a href="https://usability.columbia.edu">Usability.columbia.edu</a> offers strategies and best practices for creating user-centered digital experiences</li>
 				</ul>
 
 				<h2>Questions?</h2>

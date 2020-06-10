@@ -19,11 +19,11 @@ class Breadcrumb extends React.Component {
       <div>
         <Helmet>
           <title>Breadcrumb</title>
-          <meta name="description" content="Documentation and examples for a breadcrumb with a cited source." />
+          <meta name="description" content="Documentation and examples for a breadcrumb." />
         </Helmet>
         <div>
         	<h1>Breadcrumb</h1>
-					<p>Documentation and examples for a breadcrumb with a cited source.</p>
+					<p>Documentation and examples for a breadcrumb.</p>
 
 					<h2>Basic Example</h2>
 					<figure>

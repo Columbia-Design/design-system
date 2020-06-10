@@ -43,11 +43,11 @@ class Dropdown extends React.Component {
       <div>
         <Helmet>
           <title>Dropdown</title>
-          <meta name="description" content="Documentation and examples for a dropdown with a cited source." />
+          <meta name="description" content="Documentation and examples for a dropdown." />
         </Helmet>
         <div>
         	<h1>Drop Down</h1>
-					<p>Documentation and examples for a drop down menu (sometimes referred to as a mega menu) with a cited source.</p>
+					<p>Documentation and examples for a drop down menu (sometimes referred to as a mega menu).</p>
 
 					<h2>Basic Example</h2>
 					<figure>
