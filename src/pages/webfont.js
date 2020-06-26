@@ -10,14 +10,14 @@ class Webfonts extends React.Component {
 
   render(){
 
-    const iconAdmissionsAdvise = <WebfontIcon class="cu-icon cu-icon-admissions-advisement" />;
-    const iconAtom = <WebfontIcon class="cu-icon cu-icon-atom" />;
-    const iconClimateChange = <WebfontIcon class="cu-icon cu-icon-climate-change" />;
-    const iconInternationalStudent = <WebfontIcon class="cu-icon cu-icon-international-student" />;
-    const iconLowLibrary = <WebfontIcon class="cu-icon cu-icon-low-library" />;
-    const iconOrientation = <WebfontIcon class="cu-icon cu-icon-orientation" />;
-    const iconTransferStudent = <WebfontIcon class="cu-icon cu-icon-transfer-student" />;
-		const iconWaiter = <WebfontIcon class="cu-icon cu-icon-waiter" />;
+    const iconAdmissionsAdvise = <WebfontIcon class="cuicons cuicons-admissions-advisement" />;
+    const iconAtom = <WebfontIcon class="cuicons cuicons-atom" />;
+    const iconClimateChange = <WebfontIcon class="cuicons cuicons-climate-change" />;
+    const iconInternationalStudent = <WebfontIcon class="cuicons cuicons-international-student" />;
+    const iconLowLibrary = <WebfontIcon class="cuicons cuicons-low-library" />;
+    const iconOrientation = <WebfontIcon class="cuicons cuicons-orientation" />;
+    const iconTransferStudent = <WebfontIcon class="cuicons cuicons-transfer-student" />;
+		const iconWaiter = <WebfontIcon class="cuicons cuicons-water" />;
 
     return (
       <div>
@@ -61,7 +61,7 @@ class Webfonts extends React.Component {
           <figure>
             {iconWaiter}
           </figure>
-					<PrintComponent component={iconWaiter} figcaption="Waiter" language="html" />
+					<PrintComponent component={iconWaiter} figcaption="Water" language="html" />
 
         </div>
       </div>

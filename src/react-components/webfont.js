@@ -9,7 +9,7 @@ class WebfontIcon extends React.Component {
   render() {
 		const classes = `${this.props.class}`;
     return (
-      <i className={classes} role="alert"></i>
+      <i className={classes} role="alert">&nbsp;</i>
     );
   }
 }
