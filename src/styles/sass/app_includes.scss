@@ -1,0 +1,10 @@
+/* composite of app styles, component styles and third party styles  */
+
+@import 'global'; //app styles
+
+@import 'cu_includes'; //component styles
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+//@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+
+@import '~bootstrap/scss/bootstrap.scss';

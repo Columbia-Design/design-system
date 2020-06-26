@@ -1,3 +1,7 @@
+// no longer using this custom script to publish to github pages
+// deprecating for now
+// may only be necessary if custom job is required before publishing to github
+
 // copy over build folder for gh-pages
 // this is a small script to trigger gh-pages build with a custom subfolder for static pages
 // directory that is output by snap script is in build folder and should be used for gh-pages

@@ -1,14 +1,4 @@
-/* Includes.scss 
-
-this file imports all scss files for the app itself and the fnal output components 
-
-@important Please be sure to categorize each properly as app styles will be excluded in the final compiled for the user output
-
-prepend each file for the final output with _cu
-
- */
-
-@import 'global'; //app styles
+/* components styles only for final output */
 
 @import 'cu-colors';
 @import 'cu-slider';
@@ -20,9 +10,3 @@ prepend each file for the final output with _cu
 @import 'cu-heroes';
 @import 'cu-progressbar';
 @import 'cu-breadcrumb';
-
-//import css for icons
-@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
-@import '~@fortawesome/fontawesome-free/css/solid.css';
-
-@import '~bootstrap/scss/bootstrap.scss';
