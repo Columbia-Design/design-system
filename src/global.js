@@ -45,6 +45,11 @@ const Global = {
 			'exact': false,
 			'display': true,
 			'items': [{
+				'name': "Getting Started",
+				'component': GettingStarted,
+				'path': '/start',
+				'exact': true,
+			}, {
 				'name': "Developer Guide",
 				'component': Developer,
 				'path': '/start/developer',

@@ -34,8 +34,9 @@ class SidebarComponent extends React.Component {
     // modify pathMatch rule if sidebar is needed elsewhere
     // console.log("location: ", this.props.location);
     let pathMatch = (
+      this.props.location.pathname.indexOf('/start') === 0 ||
 			this.props.location.pathname.indexOf('/components') === 0 ||
-			this.props.location.pathname.indexOf('/content') === 0	
+			this.props.location.pathname.indexOf('/content') === 0
 		) ? true : false;
     return (pathMatch) ? this.renderSidebar() : null;
   }

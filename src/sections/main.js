@@ -23,6 +23,7 @@ class MainComponent extends React.Component {
 
     // console.log("location prop in main.js: ", this.props.location);
     let mainClass = (
+      this.props.location.pathname.indexOf('/start') === 0 ||
 			this.props.location.pathname.indexOf('/components') === 0 ||
 			this.props.location.pathname.indexOf('/content') === 0
 		) ? 'ds-main container-fluid col-md-9 py-4 with-sidebar' : 'ds-main container py-4 no-sidebar';
