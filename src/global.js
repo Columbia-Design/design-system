@@ -12,6 +12,7 @@ import Pagination from "./pages/pagination";
 import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
+import Icons from "./pages/icons";
 import Breadcrumb from "./pages/breadcrumb";
 import Alerts from "./pages/alerts";
 import Modal from "./pages/modal";
@@ -149,6 +150,12 @@ const Global = {
 				'name': "Sliders",
 				'component': Sliders,
 				'path': '/components/sliders',
+				'exact': false,
+			},
+			{
+				'name': "Icons",
+				'component': Icons,
+				'path': '/components/icons',
 				'exact': false,
 			}
 		]},
