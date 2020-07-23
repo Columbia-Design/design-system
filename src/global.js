@@ -12,7 +12,7 @@ import Pagination from "./pages/pagination";
 import Pullquote from "./pages/pullquote";
 import Sliders from "./pages/sliders";
 import Tables from "./pages/tables";
-import Webfont from "./pages/webfont";
+import Icons from "./pages/icons";
 import Breadcrumb from "./pages/breadcrumb";
 import Alerts from "./pages/alerts";
 import Modal from "./pages/modal";
@@ -148,9 +148,9 @@ const Global = {
 				'exact': false,
 			},
 			{
-				'name': "Webfonts",
-				'component': Webfont,
-				'path': '/components/webfont',
+				'name': "Icons",
+				'component': Icons,
+				'path': '/components/icons',
 				'exact': false,
 			}
 		]},

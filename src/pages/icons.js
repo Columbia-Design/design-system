@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import WebfontIcon from "../react-components/webfont";
+import WebfontIcon from "../react-components/icons";
 import PrintComponent from "../util/print-component";
 
-class Webfonts extends React.Component {
+class Icons extends React.Component {
   constructor(props) {
 		super(props);
   }
@@ -22,12 +22,12 @@ class Webfonts extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>Webfonts & Icons</title>
-          <meta name="description" content="Page about Webfonts" />
+          <title>Icons & Webfonts</title>
+          <meta name="description" content="Page about Icons" />
         </Helmet>
         <div>
-        	<h1>Webfonts</h1>
-					<p>This page describes the webfont component</p>
+        	<h1>Icons</h1>
+					<p>This page describes the icons component</p>
 
 					<h2>Examples</h2>
 					<figure>
@@ -70,4 +70,4 @@ class Webfonts extends React.Component {
 
 }
 
-export default Webfonts
+export default Icons
