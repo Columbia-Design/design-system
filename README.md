@@ -13,6 +13,6 @@
 
 - run `yarn snap` or `npm run snap` this will output static files into build folder
 - to verify that everything was build correctly run `yarn serve` or `serve -s build` that is if you have serve globally installed
-- deploy to github pages run folowing command `npm run deploy`
+- deploy to github pages run folowing command `npm run deploy` or `yarn deploy`
 
 
