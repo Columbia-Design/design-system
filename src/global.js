@@ -33,13 +33,6 @@ const Global = {
 			'display': false
 		},
 		{
-			'name': "About",
-			'component': About,
-			'path': '/about',
-			'exact': false,
-			'display': true,
-		},
-		{
 			'name': "Getting Started",
 			'component': GettingStarted,
 			'path': '/start',
@@ -58,7 +51,7 @@ const Global = {
 			}],
 		},
 		{
-			'name': "Content",
+			'name': "Elements",
 			'component': Typography,
 			'path': '/content',
 			'exact': false,
@@ -87,13 +80,13 @@ const Global = {
 			'exact': false,
 			'display': true,
 			'items': [{
-				'name': "Accordions",
+				'name': "Accordion",
 				'component': Accordions,
 				'path': '/components',
 				'exact': true,
 			},
 			{
-				'name': "Alerts",
+				'name': "Alert",
 				'component': Alerts,
 				'path': '/components/alerts',
 				'exact': false,
@@ -105,7 +98,7 @@ const Global = {
 				'exact': false,
 			},
 			{
-				'name': "Buttons",
+				'name': "Button",
 				'component': Buttons,
 				'path': '/components/buttons',
 				'exact': false,
@@ -117,7 +110,7 @@ const Global = {
 				'exact': false,
 			},
 			{
-				'name': "Heroes",
+				'name': "Hero",
 				'component': Heroes,
 				'path': '/components/heroes',
 				'exact': false,
@@ -147,7 +140,7 @@ const Global = {
 				'exact': false,
 			},
 			{
-				'name': "Sliders",
+				'name': "Toggle Switch",
 				'component': Sliders,
 				'path': '/components/sliders',
 				'exact': false,

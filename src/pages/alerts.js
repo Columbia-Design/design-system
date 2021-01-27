@@ -23,21 +23,28 @@ class Alerts extends React.Component {
         </Helmet>
         <div>
         	<h1>Alerts</h1>
-					<p>This page describes the alert component</p>
+			<p>An alert displays at the top of every page of a website or app screen, and is used to notify users of important, time-sensitive information. They are also a distinctive color based on the type of information being communicated: green for documentation, orange for time-sensitive information, red for emergencies. Users can close the alerts with one click.</p>
+			
+			<h2>Usage</h2>
+			<p>Use alerts to communicate deadlines, changes to important information, and emergencies. But use them sparingly—if users become accustomed to seeing an alert frequently, they may become desensitized to it.</p>
 
-					<h2>Examples</h2>
-					<figure>
-						{defaultAlert}
-						{successAlert}
-						{warningAlert}
-						{dangerAlert}
-					</figure>
-
-					<h2>Markup</h2>
-					<PrintComponent component={defaultAlert} figcaption="Primary Alert" language="html" />
-					<PrintComponent component={successAlert} figcaption="Success Alert" language="html" />
-					<PrintComponent component={warningAlert} figcaption="Warning Alert" language="html" />
-					<PrintComponent component={dangerAlert} figcaption="Danger Alert" language="html" />
+			<h2>Examples</h2>
+			
+			<h3>Primary Alert</h3>
+			<figure>{defaultAlert}</figure>
+			<PrintComponent component={defaultAlert} language="html" />
+			
+			<h3>Success Alert</h3>
+			<figure>{successAlert}</figure>
+			<PrintComponent component={successAlert} language="html" />
+			
+			<h3>Warning Alert</h3>
+			<figure>{warningAlert}</figure>
+			<PrintComponent component={warningAlert} language="html" />
+			
+			<h3>Danger Alert</h3>
+			<figure>{dangerAlert}</figure>
+			<PrintComponent component={dangerAlert} language="html" />					
 
         </div>
       </div>

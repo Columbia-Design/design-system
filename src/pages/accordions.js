@@ -68,22 +68,26 @@ class Accordions extends React.Component {
         </Helmet>
         <div>
 			<h1>Accordion</h1>
-			<p>Accordions should have at minimun two items, with first item expanded by default</p>
-			<p>Numeric VS Plain</p>
-			<p>Numeric is good for outlining procedure</p>
-
+			<p>An accordion is a vertical list of items, including text, tables, or images, in expandable tabs, one item per tab. The default behavior expands the first item with other items collapsed and displays the items in the order they are entered. The list can also be displayed as a numbered list. Users can expand or contract an accordion with one click.</p>
+			
+			<h2>Usage</h2>
+			<p>Use alerts to communicate deadlines, changes to important information, and emergencies. But use them sparingly—if users become accustomed to seeing an alert frequently, they may become desensitized to it.</p>
+			
+			<h2>Examples</h2>
+			<h3>Simple Accordion</h3>
 			<figure>
 				{accordionPlain}
 			</figure>
 
-			<h2>Markup</h2>
+			<h4>Markup</h4>
 			<PrintComponent component={accordionPlain} figcaption="Simple Accordion" language="html" />
 
+			<h3>Numeric Accordion</h3>
 			<figure>
 				{accordionNumeric}
 			</figure>
 
-			<h2>Markup</h2>
+			<h4>Markup</h4>
 			<PrintComponent component={accordionNumeric} figcaption="Numeric Accordion" language="html" />
 
         </div>

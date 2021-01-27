@@ -15,7 +15,7 @@ function GettingStarted() {
             <h2>Can I use the pattern library?</h2>
             <p>If you’re a current Columbia student or faculty or staff member, yes. You’ll need your UNI to download logos and patterns from the repository.</p>
             <h2>Will the elements and components work for my project?</h2>
-            <p>If your project is a website, web-based application, or mobile app&mdash;or if it has a digital user interface&mdash;yes, the patterns will work for you. But read the documentation for the elements you plan to use early in your design process because there are limitations.</p>
+            <p>If your project is a website, web-based application, or mobile app—or if it has a digital user interface—yes, the patterns will work for you. But read the code standards and documentation for the elements you plan to use early in your design process because there are limitations.</p>
             <h2>How to Use the Design System</h2>
             <ul>
                 <li>Review Columbia <a href="https://visualidentity.columbia.edu">identity guidelines</a>.</li>

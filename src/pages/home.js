@@ -15,34 +15,29 @@ function Home() {
 					Columbia University<br />
 					Design System
 				</h1>
-				<p className="lead">
-				Welcome. This design system is a collection of modular design elements meant to provide digital designers and developers with ready-to-use code that is responsive, accessible, and in keeping with Columbia web development, design, security, and identity guidelines.
-				</p>
+				<h2>Welcome</h2>
+				<p>Columbia Design System is a collection of modular design elements meant to provide digital designers and developers with ready-to-use code that is responsive, accessible, and in keeping with University web development, design, security, usability, and identity guidelines.</p>
 
-				<p>The system can be used on any Columbia digital project and includes:</p>
+				<p>The repository, available to all Columbia faculty, staff, and students, can be used on any Columbia digital project and includes:</p>
 
 				<ul>
 					<li>
-						a layout system
+						Layout system
 					</li>
 					<li>
-						a browsable collection of patterns
+						Browsable collection of patterns
 					</li>
 					<li>
-						documentation of all elements
+						Documentation of all elements
 					</li>
 					<li>
-						examples of how each element is used in a current project
+						Examples of each element used in a project
 					</li>
 				</ul>
 
-				<p>The system is available to all Columbia faculty, staff, and students.</p>
-
-				<p>If you have questions about access or would like to contribute to the library, email the Design System team.</p>
-
 				<div className="row mx-n2">
 					<div className="col-md px-2">
-						<Link to="/content" className="btn btn-lg btn-outline-primary w-100 mb-3">
+						<Link to="/start" className="btn btn-lg btn-outline-primary w-100 mb-3">
 							Get started
 						</Link>
 					</div>
@@ -52,6 +47,40 @@ function Home() {
 						</a>
 					</div>
 				</div>
+        
+        <h2>About Columbia Design System</h2>
+        
+        <h3>Who</h3>
+        
+        <p>University groups collaborated to build this system: <a href="https://cuit.columbia.edu">Columbia University Information Technology</a>, <a href="https://communications.news.columbia.edu">Office of Communications and Public Affairs</a>, and <a href="https://creative.columbia.edu">Columbia Creative</a>.</p>
+        
+        <p>We’re always looking for partners; <Link to="/contribute">learn how to contribute to the system</Link>.</p>
+        
+        <h3>What</h3>
+        
+        <p>A pattern library of modular digital components, layouts, design elements, and styling that is responsive, accessible, secure, on-brand, and platform-agnostic.</p>
+         
+        <p>Current version: 1.0</p>
+
+        <h3>Why</h3>
+        
+        <p>It’s free. Columbia Design System complies with University branding, development, security, and accessibility policies. Utilizing it means saving time and money on design, development, branding, and user testing. And it’s so much easier than starting from scratch.</p>
+        
+        <blockquote class="blockquote pullquote">
+          <p>Plus, we may have forgotten to mention that it’s free.</p>
+        </blockquote>
+          
+        <h3>Where</h3>
+        
+        <p>Right here. Check back often for updates, and here are more Columbia digital resources:</p>
+        <ul>
+          <li><a href="https://sites.columbia.edu">Columbia Sites</a> offers modern, affordable, easy-to-use websites for University research, academic, and administrative groups</li>
+          <li>View branding guidelines and download a logo at <a href="https://visualidentity.columbia.edu">visualidentity.columbia.edu</a></li>
+        </ul>
+
+        <h2>Questions?</h2>
+        <p>Email the team at <a href="mailto:designsystem@columbia.edu">designsystem@columbia.edu</a>.</p>
+        
 			</div>
     </div>
   )
