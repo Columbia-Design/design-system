@@ -46,23 +46,23 @@ class Pagination extends React.Component {
         </Helmet>
         <div>
         	<h1>Pagination</h1>
-					<p>Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
+					<p>Pagination divides content into sections that display on different pages and helps users consume content by making it more consumable and scannable.</p>
+          
+          <h2>Usage</h2>
+          <p>Pagination should be used to list content such as news stories, events, person profiles, and other types of content that are typically consumed by date, in alphabetical order, or in categorial lists.</p>
 
-					<h2>Basic Example</h2>
+					<h2>Examples</h2>
+          <h3>Default</h3>
 					<figure>
 						{renderHTML(Pagination1)}
 					</figure>
+					<PrintComponent component={Pagination1} language="html" plainHtml="true" figcaption="Pagination markup" />
 
-					<h2>Markup</h2>
-					<PrintComponent component={Pagination1} language="html" plainHtml="true" figcaption="Page navigation example markup" />
-
-					<h2>Example with Disabled and Active States</h2>
+					<h3>Disabled and Active States</h3>
 					<figure>
 						{renderHTML(Pagination2)}
 					</figure>
-
-					<h2>Markup</h2>
-					<PrintComponent component={Pagination2} language="html" plainHtml="true" figcaption="Page navigation with disabled and active states example markup" />
+					<PrintComponent component={Pagination2} language="html" plainHtml="true" figcaption="Pagination with disabled and active states markup" />
 
         </div>
       </div>

@@ -19,36 +19,43 @@ class Heroes extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>Heroes</title>
+          <title>Hero</title>
           <meta name="description" content="Page about Heroes" />
         </Helmet>
         <div>
-        	<h1>Heroes</h1>
-					<p>This page describes the hero component</p>
+        	<h1>Hero</h1>
+					<p>A hero is a large image that “bleeds” off the edges of the web page or app screen. They are often used as banners to anchor a page or screen but can be used anywhere. Often, text and call-to-action buttons are positioned on top of the image.</p>
+          
+          <h2>Usage</h2>
+          <p>Hero images add sophistication and energy to a page or screen and often set the tone for a user’s experience. Limit uploads to images of 72 pixels per inch.</p>
 
 					<h2>Examples</h2>
+          <h3>Default</h3>
 					<figure>
 						{heroDefault}
 					</figure>
+          <PrintComponent component={heroDefault} figcaption="Default hero markup" language="html" />
+          <h3>Content top left</h3>
 					<figure>
 						{herotTopLeft}
 					</figure>
-					<figure>
+          <PrintComponent component={herotTopLeft} figcaption="Hero, top left markup" language="html" />
+          <h3>Content top right</h3>
+          <figure>
 						{herotTopRight}
 					</figure>
+          <PrintComponent component={herotTopRight} figcaption="Hero, top right markup" language="html" />
+          <h3>Content bottom left</h3>
 					<figure>
 						{herotBottomLeft}
 					</figure>
+          <PrintComponent component={herotBottomLeft} figcaption="Hero, bottom left markup" language="html" />
+          <h3>Content bottom right</h3>
 					<figure>
 						{herotBottomRight}
 					</figure>
+          <PrintComponent component={herotBottomRight} figcaption="Hero, bottom right markup" language="html" />
 
-					<h2>Markup</h2>
-					<PrintComponent component={heroDefault} figcaption="Default Hero" language="html" />
-					<PrintComponent component={herotTopLeft} figcaption="Hero, top left" language="html" />
-					<PrintComponent component={herotTopRight} figcaption="Hero, top right" language="html" />
-					<PrintComponent component={herotBottomLeft} figcaption="Hero, bottom left" language="html" />
-					<PrintComponent component={herotBottomRight} figcaption="Hero, bottom right" language="html" />
         </div>
       </div>
     )

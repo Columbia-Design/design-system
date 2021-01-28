@@ -27,7 +27,7 @@ const ModalExample1 = `
 const ModalExample2 = `
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Launch modal
 </button>
 
 <!-- Modal -->
@@ -101,7 +101,18 @@ class Modal extends React.Component {
         </Helmet>
         <div>
         	<h1>Modal</h1>
-					<p>Use modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+					<p>Modal windows are graphic elements that “pop up” on top of the main browser window or app screen to provide users with additional information.</p>
+          
+          <h2>Usage</h2>
+          <p>Ways to employ modal windows:</p>
+          <ul>
+            <li>Alert users to important information</li>
+            <li>Notify users of an error in form completion</li>
+            <li>Display tooltips</li>
+            <li>Prevent user navigating to next step in a process</li>
+          </ul>
+          
+          
 
 					<h2>Modal Components</h2>
 					<p>Below is a static modal example. Included are the modal header, modal body (required for padding), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
@@ -110,7 +121,7 @@ class Modal extends React.Component {
 					</figure>
 					<PrintComponent component={ModalExample1} language="html" plainHtml="true" figcaption="Markup" />
 
-					<h2>Live demo</h2>
+					<h2>Example</h2>
 					<p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
 					<figure>
 						{renderHTML(ModalExample2)}
@@ -118,7 +129,7 @@ class Modal extends React.Component {
 					<PrintComponent component={ModalExample2} language="html" plainHtml="true" figcaption="Markup" />
 
 
-					<h2>Optional sizes</h2>
+					<h2>Modal sizes</h2>
 					<p>Modals have two optional sizes, available via modifier classes to be placed on a <code>{`.modal-dialog`}</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
 					<figure>
 						{renderHTML(ModalExample3)}
