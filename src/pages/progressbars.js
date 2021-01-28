@@ -20,15 +20,16 @@ class ProgressBars extends React.Component {
         </Helmet>
         <div>
         	<h1>Progress Bar</h1>
-					<p>This page describes the progress bar component</p>
+					<p>Progress bars list the steps in a process and identify which step a user is on.</p>
+          
+          <h2>Usage</h2>
+          <p>Use progress bars to orient users within a series of steps in a process or to indicate level of progress toward completion of a goal or task.</p>
 
-					<h2>Examples</h2>
+					<h2>Example</h2>
 					<figure>
 						{defaultBar}
 					</figure>
-
-					<h2>Markup</h2>
-					<PrintComponent component={defaultBar} figcaption="Progress Bar" language="html" />
+					<PrintComponent component={defaultBar} figcaption="Progress bar markup" language="html" />
 
         </div>
       </div>

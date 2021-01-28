@@ -10,14 +10,14 @@ class Icons extends React.Component {
 
   render(){
 
-    const iconAdmissionsAdvise = <WebfontIcon class="cuicons cuicons-admissions-advisement" />;
-    const iconAtom = <WebfontIcon class="cuicons cuicons-atom" />;
-    const iconClimateChange = <WebfontIcon class="cuicons cuicons-climate-change" />;
-    const iconInternationalStudent = <WebfontIcon class="cuicons cuicons-international-student" />;
-    const iconLowLibrary = <WebfontIcon class="cuicons cuicons-low-library" />;
-    const iconOrientation = <WebfontIcon class="cuicons cuicons-orientation" />;
-    const iconTransferStudent = <WebfontIcon class="cuicons cuicons-transfer-student" />;
-		const iconWaiter = <WebfontIcon class="cuicons cuicons-water" />;
+    const iconAdmissionsAdvise = <p><WebfontIcon class="cuicons cuicons-admissions-advisement" /><WebfontIcon class="cuicons cuicons-2x cuicons-admissions-advisement" /><WebfontIcon class="cuicons cuicons-3x cuicons-admissions-advisement" /><WebfontIcon class="cuicons cuicons-4x cuicons-admissions-advisement" /></p>;
+    const iconAtom = <p><WebfontIcon class="cuicons cuicons-atom" /><WebfontIcon class="cuicons cuicons-2x cuicons-atom" /><WebfontIcon class="cuicons cuicons-3x cuicons-atom" /><WebfontIcon class="cuicons cuicons-4x cuicons-atom" /></p>;
+    const iconClimateChange = <p><WebfontIcon class="cuicons cuicons-climate-change" /><WebfontIcon class="cuicons cuicons-2x cuicons-climate-change" /><WebfontIcon class="cuicons cuicons-3x cuicons-climate-change" /><WebfontIcon class="cuicons cuicons-4x cuicons-climate-change" /></p>;
+    const iconInternationalStudent = <p><WebfontIcon class="cuicons cuicons-international-student" /><WebfontIcon class="cuicons cuicons-2x cuicons-international-student" /><WebfontIcon class="cuicons cuicons-3x cuicons-international-student" /><WebfontIcon class="cuicons cuicons-4x cuicons-international-student" /></p>;
+    const iconLowLibrary = <p><WebfontIcon class="cuicons cuicons-low-library" /><WebfontIcon class="cuicons cuicons-2x cuicons-low-library" /><WebfontIcon class="cuicons cuicons-3x cuicons-low-library" /><WebfontIcon class="cuicons cuicons-4x cuicons-low-library" /></p>;
+    const iconOrientation = <p><WebfontIcon class="cuicons cuicons-orientation" /><WebfontIcon class="cuicons cuicons-2x cuicons-orientation" /><WebfontIcon class="cuicons cuicons-3x cuicons-orientation" /><WebfontIcon class="cuicons cuicons-4x cuicons-orientation" /></p>;
+    const iconTransferStudent = <p><WebfontIcon class="cuicons cuicons-transfer-student" /><WebfontIcon class="cuicons cuicons-2x cuicons-transfer-student" /><WebfontIcon class="cuicons cuicons-3x cuicons-transfer-student" /><WebfontIcon class="cuicons cuicons-4x cuicons-transfer-student" /></p>;
+		const iconWaiter = <p><WebfontIcon class="cuicons cuicons-water" /><WebfontIcon class="cuicons cuicons-2x cuicons-water" /><WebfontIcon class="cuicons cuicons-3x cuicons-water" /><WebfontIcon class="cuicons cuicons-4x cuicons-water" /></p>;
 
     return (
       <div>

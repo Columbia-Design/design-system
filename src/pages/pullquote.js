@@ -24,15 +24,16 @@ class Pullquote extends React.Component {
         </Helmet>
         <div>
         	<h1>Pullquote</h1>
-					<p>Documentation and examples for a pull quote with a cited source.</p>
+					<p>Pull quotes are text, often excerpted from the main body of text, set aside in a different font size and color to call attention to an important idea or piece of information. They can be attributed to a source, but this is not required.</p>
 
-					<h2>Basic Example</h2>
+          <h2>Usage</h2>
+          <p>Use pull quotes to highlight important ideas and break up blocks of text.</p>
+
+					<h2>Example</h2>
 					<figure>
 						{renderHTML(Pullquote1)}
 					</figure>
-
-					<h2>Markup</h2>
-					<PrintComponent component={Pullquote1} language="html" plainHtml="true" figcaption="Pullquote example markup" />
+					<PrintComponent component={Pullquote1} language="html" plainHtml="true" figcaption="Pullquote markup" />
 
         </div>
       </div>

@@ -15,21 +15,21 @@ class Sliders extends React.Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Sliders</title>
-					<meta name="description" content="Page about Sliders" />
+					<title>Toggle Switch</title>
+					<meta name="description" content="Page about toggle switches" />
 				</Helmet>
 				<div>
-					<h1>Sliders</h1>
-					<p>This page contains short list of availabe slider elements</p>
+					<h1>Toggle Switch</h1>
+					<p>Toggle switches, or on-off buttons, allow users to choose between two, usually oppositional, values, e.g. on and off, yes and no, red and blue.</p>
+          
+          <h2>Usage</h2>
+          <p>Toggle switches should be clearly labeled, and the default behavior should be option users are most likely to choose or assume to be true.</p>
 
-				<h2>Examples</h2>
-				<figure>
-					<figcaption>Example 1</figcaption>
-					{mainSlider}
-				</figure>
-
-				<h2>Markup</h2>
-				<PrintComponent component={mainSlider} language="html" />
+  				<h2>Example</h2>
+  				<figure>
+  					{mainSlider}
+  				</figure>
+  				<PrintComponent component={mainSlider} language="html" figcaption="Toggle switch markup"/>
 
 				</div>
 			</div>
