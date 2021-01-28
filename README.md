@@ -16,3 +16,11 @@
 - deploy to github pages run folowing command `npm run deploy` or `yarn deploy`
 
 
+## Remaining Items to Address
+
+- 404 page, need to address redirect loop
+- in some occasions images are not loading properly in local dev (https://designsystem.columbia.edu/content/images)
+- font-awsome icons are not rendering properly
+- generate dynamic css and js export
+- create environment for testing manual/dynamic export
+
