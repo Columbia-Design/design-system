@@ -23,19 +23,23 @@ class Buttons extends React.Component {
         </Helmet>
         <div>
         	<h1>Buttons</h1>
-					<p>This page contains short list of availabe button elements</p>
+					<p>A button is a graphic used to direct users’ attention to a task or action by hyperlinking to relevant information. They are also called call-to-action buttons, or CTAs. They are pill-shaped and either compliment or contrast with the primary color of the site or app.</p>
+					
+					<h2>Usage</h2>
+					<p>Use buttons to engage users to begin or complete a task.</p>
 
 					<h2>Examples</h2>
-					<figure>
-						{buttonPrimary} &nbsp;
-						{buttonSecondary} &nbsp;
-						{buttonDisabled}
-					</figure>
+					<h3>Primary Button</h3>
+					<figure>{buttonPrimary}</figure>
+					<PrintComponent component={buttonPrimary} language="html" figcaption="Primary button markup"/>
+					
+					<h3>Secondary Button</h3>
+					<figure>{buttonSecondary}</figure>
+					<PrintComponent component={buttonSecondary} language="html" figcaption="Secondary button markup"/>
 
-					<h2>Markup</h2>
-					<PrintComponent component={buttonPrimary} figcaption="Primary Button" language="html" />
-					<PrintComponent component={buttonSecondary} figcaption="Secondary Button" language="html" />
-					<PrintComponent component={buttonDisabled} figcaption="Disabled Button" language="html" />
+					<h3>Disabled Button</h3>
+					<figure>{buttonDisabled}</figure>
+					<PrintComponent component={buttonDisabled} language="html" figcaption="Disabled button markup"/>
 
         </div>
       </div>

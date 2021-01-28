@@ -23,15 +23,16 @@ class Breadcrumb extends React.Component {
         </Helmet>
         <div>
         	<h1>Breadcrumb</h1>
-					<p>Documentation and examples for a breadcrumb.</p>
+					<p>A breadcrumb is a series of links that lays out the hierarchical relationship between the current page and the overall site or app structure. Breadcrumbs provide secondary navigation that allows users to move freely through a series of pages and leap backward or forward more than one page at a time. They facilitate users being able to orient themselves within the breadth of an app or website.</p>
+          
+          <h2>Usage</h2>
+          <p>Breadcrumbs are essential navigation elements; every website should have one.</p>
 
-					<h2>Basic Example</h2>
+					<h2>Example</h2>
 					<figure>
 						{renderHTML(Breadcrumb1)}
 					</figure>
-
-					<h2>Markup</h2>
-					<PrintComponent component={Breadcrumb1} language="html" plainHtml="true" figcaption="Breadcrumb example markup" />
+					<PrintComponent component={Breadcrumb1} language="html" plainHtml="true" figcaption="Breadcrumb markup"/>
 
         </div>
       </div>

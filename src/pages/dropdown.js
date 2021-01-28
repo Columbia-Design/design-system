@@ -47,15 +47,16 @@ class Dropdown extends React.Component {
         </Helmet>
         <div>
         	<h1>Drop Down</h1>
-					<p>Documentation and examples for a drop down menu (sometimes referred to as a mega menu).</p>
+					<p>A drop down is a navigational element that allows users to choose one item from a list in order to move throughout a website or app. The first item in the list is the parent and is the only item visible on page load; subordinate items expand when the user hovers over the parent item.</p>
+          
+          <h2>Usage</h2>
+          <p>Drop downs are essential navigation elements. Use them at the top of web pages and app screens to allow users to orient themselves and control their experience with a website or app.</p>
 
-					<h2>Basic Example</h2>
+					<h2>Example</h2>
 					<figure>
 						{renderHTML(Dropdown1)}
 					</figure>
-
-					<h2>Markup</h2>
-					<PrintComponent component={Dropdown1} language="html" plainHtml="true" figcaption="Dropdown example markup" />
+					<PrintComponent component={Dropdown1} language="html" plainHtml="true" figcaption="Dropdown markup" />
 
         </div>
       </div>

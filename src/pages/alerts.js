@@ -18,11 +18,11 @@ class Alerts extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>Alerts</title>
+          <title>Alert</title>
           <meta name="description" content="Page about Alerts" />
         </Helmet>
         <div>
-        	<h1>Alerts</h1>
+        	<h1>Alert</h1>
 			<p>An alert displays at the top of every page of a website or app screen, and is used to notify users of important, time-sensitive information. They are also a distinctive color based on the type of information being communicated: green for documentation, orange for time-sensitive information, red for emergencies. Users can close the alerts with one click.</p>
 			
 			<h2>Usage</h2>
@@ -32,19 +32,19 @@ class Alerts extends React.Component {
 			
 			<h3>Primary Alert</h3>
 			<figure>{defaultAlert}</figure>
-			<PrintComponent component={defaultAlert} language="html" />
+			<PrintComponent component={defaultAlert} language="html" figcaption="Primary alert markup"/>
 			
 			<h3>Success Alert</h3>
 			<figure>{successAlert}</figure>
-			<PrintComponent component={successAlert} language="html" />
+			<PrintComponent component={successAlert} language="html" figcaption="Success alert markup"/>
 			
 			<h3>Warning Alert</h3>
 			<figure>{warningAlert}</figure>
-			<PrintComponent component={warningAlert} language="html" />
+			<PrintComponent component={warningAlert} language="html" figcaption="Warning alert markup"/>
 			
 			<h3>Danger Alert</h3>
 			<figure>{dangerAlert}</figure>
-			<PrintComponent component={dangerAlert} language="html" />					
+			<PrintComponent component={dangerAlert} language="html" figcaption="Danger alert markup"/>					
 
         </div>
       </div>

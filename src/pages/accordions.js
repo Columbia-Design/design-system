@@ -18,7 +18,7 @@ class Accordions extends React.Component {
 		},
 		{	
 			"id": "simple",
-			"active": 1,
+			"active": 0,
 			"title": "Admissions Advisement",
 			"innerHeading": "Inner Heading",
 			"text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -63,7 +63,7 @@ class Accordions extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>Accordions</title>
+          <title>Accordion</title>
           <meta name="description" content="Accordion Component Page" />
         </Helmet>
         <div>
@@ -78,17 +78,13 @@ class Accordions extends React.Component {
 			<figure>
 				{accordionPlain}
 			</figure>
-
-			<h4>Markup</h4>
-			<PrintComponent component={accordionPlain} figcaption="Simple Accordion" language="html" />
+			<PrintComponent component={accordionPlain} figcaption="Simple accordion markup" language="html" />
 
 			<h3>Numeric Accordion</h3>
 			<figure>
 				{accordionNumeric}
 			</figure>
-
-			<h4>Markup</h4>
-			<PrintComponent component={accordionNumeric} figcaption="Numeric Accordion" language="html" />
+			<PrintComponent component={accordionNumeric} figcaption="Numeric accordion markup" language="html" />
 
         </div>
       </div>
