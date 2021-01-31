@@ -35,18 +35,15 @@ function Home() {
 					</li>
 				</ul>
 
-				<div className="row mx-n2">
-					<div className="col-md px-2">
-						<Link to="/start" className="btn btn-lg btn-outline-primary w-100 mb-3">
+				<p>
+						<Link to="/start" className="btn btn-lg btn-outline-primary mr-4">
 							Get started
 						</Link>
-					</div>
-					<div className="col-md px-2">
-						<a href="https://github.com/Columbia-Design/design-system" className="btn btn-lg btn-outline-secondary w-100 mb-3">
+                        
+            <a href="https://github.com/Columbia-Design/design-system" className="btn btn-lg btn-outline-secondary">
 							Download
 						</a>
-					</div>
-				</div>
+				</p>
         
         <h2>About Columbia Design System</h2>
         

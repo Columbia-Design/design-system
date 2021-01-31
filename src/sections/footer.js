@@ -13,7 +13,7 @@ function Footer() {
 						</div>
 						<div id="cu-footer-links" className="col-xs-12 col-md-8">
 							<span className="copyright"><a href="http://www.columbia.edu/node/111.html">&copy;{(new Date().getFullYear())} Columbia University</a></span>
-							<span className="a11y"><a href="http://health.columbia.edu/disability-services"><i className="fa fa-wheelchair" aria-hidden="true"></i><span className="sr-only">Accessibility</span></a></span>
+							<span className="a11y"><a href="http://health.columbia.edu/disability-services"><i className="wheelchair-icon" aria-hidden="true"></i><span className="sr-only">Accessibility</span></a></span>
 							<span><a href="http://eoaa.columbia.edu/notice-nondiscrimination">Nondiscrimination</a></span>
 							<span><a href="https://jobs.columbia.edu/">Employment</a></span>
 							<span><a href="https://sites.columbia.edu/">Columbia Sites</a></span>

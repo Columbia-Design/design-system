@@ -20,7 +20,7 @@ class Accordion extends React.Component {
 
             <button className={btnClasses} type="button" data-toggle="collapse" 
                     data-target={`#${item.id}-accordion-text-${index}`} aria-expanded="true" aria-controls={`${item.id}-accordion-text-${index}`}>
-              {(this.props.type === "numeric") ? <span className="accordion-index">{index + 1}</span> : <i className="carret fas fa-angle-down fa-xs" aria-hidden="true"></i> }
+              {(this.props.type === "numeric") ? <span className="accordion-index">{index + 1}</span> : <i className="carret" aria-hidden="true"></i> }
               {item.title}
             </button>
 
