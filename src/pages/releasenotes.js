@@ -25,18 +25,18 @@ function ReleaseNotes() {
         <h3>Components</h3>
         <p>The initial set is the first of several planned batches; here’s what you can use right now:</p>
         <ul>
-          <li>Accordion</li>
-          <li>Alert</li>
-          <li>Breadcrumb</li>
-          <li>Button</li>
-          <li>Drop Down</li>
-          <li>Hero</li>
-          <li>Modal Window</li>
-          <li>Pagination</li>
-          <li>Pull Quote</li>
-          <li>Progress Bar</li>
-          <li>Toggle Switch</li>
-          <li>Icons</li>
+          <li><Link to="/components">Accordion</Link></li>
+          <li><Link to="/components/alerts">Alert</Link></li>
+          <li><Link to="/components/breadcrumb">Breadcrumb</Link></li>
+          <li><Link to="/components/buttons">Button</Link></li>
+          <li><Link to="/components/dropdown">Drop Down</Link></li>
+          <li><Link to="/components/heroes">Hero</Link></li>
+          <li><Link to="/components/modal">Modal Window</Link></li>
+          <li><Link to="/components/pagination">Pagination</Link></li>
+          <li><Link to="/components/pullquote">Pull Quote</Link></li>
+          <li><Link to="/components/progressbars">Progress Bar</Link></li>
+          <li><Link to="/components/sliders">Toggle Switch</Link></li>
+          <li><Link to="/components/icons">Icons</Link></li>
         </ul>
          
          <p>We have grand plans for building out additional components, so check back often or email us with questions at designsystem@columbia.edu.</p>
