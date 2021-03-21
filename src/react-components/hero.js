@@ -12,7 +12,7 @@ class Hero extends React.Component {
         <div className="hero-img">
 				  <img border="0" alt={this.props.alt} src={this.props.image} />
         </div>
-        <div className="hero-body p-4">
+        <div className="hero-body">
 				  <h1>{renderHTML(this.props.heading)}</h1>
 				  <p className="lead">{renderHTML(this.props.text)}</p>
 				  <a className="btn btn-primary btn-lg d-inline-block" href="#">{this.props.cta}</a>
