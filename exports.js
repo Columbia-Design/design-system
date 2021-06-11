@@ -1,6 +1,6 @@
 //generate a compiled css and js of all included/required libraries/styles needed to run cu components
 const fs = require("fs");
-const sass = require('node-sass');
+const sass = require('sass');
 
 const jsExports = [
 	'jquery/dist/jquery.min.js',

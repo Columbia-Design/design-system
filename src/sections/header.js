@@ -10,7 +10,7 @@ function Header() {
   return (
 		<header role="banner">
 			<div id="nav-wrapper">
-				<div className="container-fluid">
+				<div className="container">
 
 					<div className="row">
 						<div className="col-sm-11">

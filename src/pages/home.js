@@ -63,7 +63,7 @@ function Home() {
         
         <p>It’s free. Columbia Design System complies with University branding, development, security, and accessibility policies. Utilizing it means saving time and money on design, development, branding, and user testing. And it’s so much easier than starting from scratch.</p>
         
-        <blockquote class="blockquote pullquote">
+        <blockquote className="blockquote pullquote">
           <p>Plus, we may have forgotten to mention that it’s free.</p>
         </blockquote>
           

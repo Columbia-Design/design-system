@@ -1,6 +1,8 @@
-html, body {
-  font-size: 16px;
+body {
+  color: #222222;
+  font-family: "proxima-nova", sans-serif;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem !important;
@@ -79,18 +81,18 @@ main.ds-main {
 /* from common.css */
 
 #nav-wrapper {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
   position: relative;
   z-index: 5;
   min-height: 42px;
-  background: #1d497d;
+  background: white;
 }
 #nav-wrapper a {
   display: inline-block;
-  color: #FFF;
+  color: #3A6FA2;
   text-transform: uppercase;
-  padding: 11px 0;
-  font-weight: 300;
+  padding: 13px 0;
 }
 
 .clearfix::after {
@@ -242,10 +244,6 @@ h1 {
   line-height: 1em;
   color: #0e5a90;
 }
-.body {
-  font-size: 1.2em;
-  line-height: 1.286em;
-}
 
 
 @media (max-width: 767px) {
@@ -365,13 +363,7 @@ h1 {
 
 /* from search.css */
 
-body {
-  color: #222222;
-}
 
-#nav-wrapper a {
-  color: #FFF;
-}
 
 .nav > li > a {
   padding: 12px 15px 5px;
