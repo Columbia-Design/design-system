@@ -26,7 +26,7 @@ class MainComponent extends React.Component {
       this.props.location.pathname.indexOf('/start') === 0 ||
 			this.props.location.pathname.indexOf('/components') === 0 ||
 			this.props.location.pathname.indexOf('/content') === 0
-		) ? 'ds-main container-fluid col-md-9 py-4 with-sidebar' : 'ds-main container py-4 no-sidebar';
+		) ? 'ds-main col-md-9 col-lg-8 col-xl-7 pb-4 with-sidebar' : 'ds-main col-md-9 col-lg-8 col-xl-7 pb-4 no-sidebar';
     return (
       <main role="main" className={`${mainClass}`}>
         <Switch>{ routes }</Switch>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
+import Hero from "../react-components/hero";
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -10,10 +11,12 @@ function Home() {
         <meta name="description" content="" />
         <link rel="canonical" href="https://brand.columbia.edu" />
       </Helmet>
-			<div className="ds-masthead pl-md-5">
+      <div className="container-fullbleed">
+        <Hero class="hero-default" image="https://www.columbia.edu/content/sites/default/files/styles/cu_crop/public/content/Morningside%20Campus%20at%20Dusk%202.jpg" alt="Picture of Campus" heading="Heading 1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" cta="Do It Now!" />
+      </div>
+			<div>
 				<h1>
-					Columbia University<br />
-					Design System
+					Columbia University Design System
 				</h1>
 				<h2>Welcome</h2>
 				<p>Columbia Design System is a collection of modular design elements meant to provide digital designers and developers with ready-to-use code that is responsive, accessible, and in keeping with University web development, design, security, usability, and identity guidelines.</p>

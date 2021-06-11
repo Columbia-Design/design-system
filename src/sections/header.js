@@ -10,7 +10,7 @@ function Header() {
   return (
 		<header role="banner">
 			<div id="nav-wrapper">
-				<div className="container">
+				<div className="container-fluid">
 
 					<div className="row">
 						<div className="col-sm-11">
@@ -21,26 +21,19 @@ function Header() {
 				</div>
 			</div>
 
-			<div id="brand-wrapper" className="d-block d-sm-none">
-				<div id="brand-wrapper-inner">
-					<NavLink to="/" exact className="nav-link">
-						<span className="brand">Columbia University Design System</span>
-					</NavLink>
+			<div id="brand-wrapper" className="container-fluid">
+				<div className="row">
+					<div className="col">
+						<a href="/">
+							<span className="brand">Columbia | Design System</span>
+						</a>
+					</div>
 				</div>
 			</div>
 
-			<div className="nav-lined-container">
-				<div id="navbar" className="container-fluid">
-
+			<div id="navbar" className="container-fluid">
+				<div className="row">
 					<ul className="nav nav-lined">
-						<li className="nav-item ds-home-link">
-							<NavLink to="/" exact>
-								<span className="navbar-brand">
-									{CuCrown()}
-								</span>
-								Design System
-							</NavLink>
-						</li>
 						{links}
 					</ul>
 				</div>
