@@ -15,7 +15,7 @@ class Hero extends React.Component {
         <div className="hero-body">
 				  <h1>{renderHTML(this.props.heading)}</h1>
 				  <p className="lead">{renderHTML(this.props.text)}</p>
-				  <a className="btn btn-primary btn-lg d-inline-block" href="#">{this.props.cta}</a>
+				  <a className="btn btn-primary btn-lg d-inline-block" href={this.props.ctalink}>{this.props.cta}</a>
         </div>
 			</div>
     );

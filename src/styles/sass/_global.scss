@@ -69,3 +69,23 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 15px;
   }
 }
+
+// footer
+#cu-footer {
+  background: #1d497d;
+  color: #fff;
+  line-height: 27px;
+  padding: 15px 0 25px;
+}
+#footer-cu-homepage {
+  background: url("../../assets/img/cu-logo.svg") no-repeat;
+  display: block;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 327px;
+  @media (min-width: 992px) {
+    margin-left: 0;
+  }
+}
