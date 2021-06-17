@@ -1,7 +1,15 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
-import Hero from "../react-components/hero";
+import Hero from "../react-components/hero"
 import { Link } from 'react-router-dom'
+import home_flag from '../assets/img/home_flag.jpg'
+import icon_crown from '../assets/img/icon-logo.png'
+import icon_design from '../assets/img/icon-design.png'
+import icon_merch from '../assets/img/icon-merchandise.png'
+import icon_check from '../assets/img/icon-rights.png'
+import icon_mail from '../assets/img/icon-stationary.png'
+
+console.log(home_flag);
 
 function Home() {
   return (
@@ -12,7 +20,7 @@ function Home() {
         <link rel="canonical" href="https://brand.columbia.edu" />
       </Helmet>
       <div className="container-fullbleed mb-4">
-        <Hero class="hero-default" image="https://visualidentity.columbia.edu/sites/default/files/styles/cu_crop/public/content/home_0.jpg?h=1c221afb&itok=dh1MCF_u" alt="Picture of Campus" heading="" text="Guidelines and best practices that promote a unified institutional identity and leverage Columbia's name, reputation, and trademarks in support of the University mission" cta="Download a Logo" ctalink="https://downloads.visualidentity.columbia.edu/"/>
+        <Hero class="hero-default" image={home_flag} alt="Picture of Campus" heading="" text="Guidelines and best practices that promote a unified institutional identity and leverage Columbia's name, reputation, and trademarks in support of the University mission" cta="Download a Logo" ctalink="https://downloads.visualidentity.columbia.edu/"/>
       </div>
 			<div className="container-fluid px-0">
         <div className="row">
@@ -49,11 +57,61 @@ function Home() {
             <p>It’s free. Columbia Design System complies with University branding, development, security, and accessibility policies. Utilizing it means saving time and money on design, development, branding, and user testing. And it’s so much easier than starting from scratch.</p>
           </div>
         </div>
+        <div className="row text-center justify-content-center">
+          <div className="col-12 mt-5 mb-3 text-center text-uppercase">
+            <h2>Top Services</h2>
+          </div>
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div className="card border-0">
+              <img src={icon_crown} className="card-img-top" alt="crown"/>
+              <div className="card-body p-0">
+                <h3 className="h6 card-title mb-0"><a href="mailto:creative@columbia.edu">Request a Custom Logo</a></h3>
+                <p className="card-text">Ask us to create an identity for your office, department, or research center. Free to those on the Morningside campus.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div className="card border-0">
+              <img src={icon_design} className="card-img-top" alt="pen"/>
+              <div className="card-body p-0">
+                <h3 className="h6 card-title mb-0"><a href="mailto:creative@columbia.edu">Design Services</a></h3>
+                <p className="card-text">Contact Columbia Creative for design services.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div className="card border-0">
+              <img src={icon_merch} className="card-img-top" alt="Columbia C logo"/>
+              <div className="card-body p-0">
+                <h3 className="h6 card-title mb-0"><a href="mailto:hf2021@columbia.edu">Merchandising</a></h3>
+                <p className="card-text">Request permission to use the Columbia identity on merchandise or non academic items.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div className="card border-0">
+              <img src={icon_check} className="card-img-top" alt="check"/>
+              <div className="card-body p-0">
+                <h3 className="h6 card-title mb-0"><a href="mailto:creative@columbia.edu">Rights and Permissions</a></h3>
+                <p className="card-text">Find out who to ask about using the University identity on your conference poster or other academic project.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div className="card border-0">
+              <img src={icon_mail} className="card-img-top" alt="envelope"/>
+              <div className="card-body p-0">
+                <h3 className="h6 card-title mb-0"><a href="mailto:creative@columbia.edu">Order Stationery</a></h3>
+                <p className="card-text">Order letterhead, business cards, or other stationery getting expert advice on design and free branding services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <h2>Questions?</h2>
-      <p>Email the team at <a href="mailto:designsystem@columbia.edu">designsystem@columbia.edu</a>.</p>
-        
+      <div className="mt-5 mb-3">
+        <h2>Questions?</h2>
+        <p>Email the team at <a href="mailto:designsystem@columbia.edu">designsystem@columbia.edu</a>.</p>
+      </div>
     </div>
   )
 }
