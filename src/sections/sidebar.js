@@ -22,7 +22,7 @@ class SidebarComponent extends React.Component {
     });
 
     return (
-      <div role="navigation" className="col-md-3 sidebar py-4 ds-sidebar">
+      <div role="navigation" className="col-md-2 sidebar py-4 px-0 ds-sidebar">
         <ul className="nav flex-md-column">
           { sidebarLinks.map((item, index) => <li key={index} className="nav-item"><NavLink to={item.path} exact={item.exact} className="nav-link" activeClassName="active">{item.name}</NavLink></li>) }
         </ul>

@@ -1,8 +1,9 @@
 // colors
 // links
-$culink-default:#3A6FA2; // medium blue
-$culink-hover:#0071B3; // more saturated blue
-$culink-active:#216497; // darker blue
+$culink-default :#3A6FA2; // medium blue
+$culink-hover: #0071B3; // more saturated blue
+$culink-active: #216497; // darker blue
+$culink-visited: #216497;
 // text
 $cutext-73:#444444; // darkest, 73% dark
 $cutext-66:#555555; // lighter, 66% dark
@@ -29,13 +30,13 @@ $cuwarn-light:#DC2A2A;
 
 $cuborder: #F0F0F0;
 
-
-
 // named color overrides
 $primary: $culink-default;
 $secondary: $cutext-66;
+$headings-color: #555555;
 
 // link color overrides
 $link-color: $culink-default;
 $link-hover-color: $culink-hover;
 
+$font-size-base: 1.125rem;

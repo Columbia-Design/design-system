@@ -38,7 +38,7 @@ function Home() {
     				</ul>
           </div>
         </div>
-        <div className="row">
+        <div className="row font-size-sm">
           <div className="col-12 mt-5 mb-3">
             <h2>About Columbia Design System</h2>
           </div>
@@ -57,7 +57,7 @@ function Home() {
             <p>It’s free. Columbia Design System complies with University branding, development, security, and accessibility policies. Utilizing it means saving time and money on design, development, branding, and user testing. And it’s so much easier than starting from scratch.</p>
           </div>
         </div>
-        <div className="row text-center justify-content-center">
+        <div className="row text-center justify-content-center font-size-sm">
           <div className="col-12 mt-5 mb-3 text-center text-uppercase">
             <h2>Top Services</h2>
           </div>

@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <Router>
 			  <Helmet>
-					<script src="https://use.typekit.net/rke7urc.js" type="text/javascript" />
+					<link rel="stylesheet" href="https://use.typekit.net/rke7urc.css" />
 				</Helmet>
         <Header />
 				<div className="container-fluid">

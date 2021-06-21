@@ -3,10 +3,6 @@ body {
   font-family: "proxima-nova", sans-serif;
 }
 
-a {
-  color: #3A6FA2;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem !important;
 }
@@ -30,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 1170px) {
     margin-left: calc(-50vw + 570px); // 570px is (1170px/2) - 15px;
   }
+}
+
+.font-size-sm {
+  font-size: 1rem;
 }
 
 // very top of header
@@ -67,7 +67,24 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 20px;
     font-weight: 600;
     padding: 10px 15px;
+    &.active {
+      display: inline-block;
+      position: relative;
+      &::after {
+        background-color: $culink-default;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+      }
+    }
   }
+}
+
+// sidebar nav
+.sidebar .nav .nav-link.active {
+  background-color: var(--primary);
+  color: white;
 }
 
 // footer
