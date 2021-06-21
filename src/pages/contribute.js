@@ -10,7 +10,7 @@ function Contribute() {
                 <meta name="description" content="How to cotribute" />
                 <link rel="canonical" href="https://designsystem.columbia.edu/contribute" />
             </Helmet>
-            <div className="ds-masthead pl-md-5">
+            <div className="ds-masthead">
 
                 <h1>Contribute</h1>
                 <h2>Eligible Contributions</h2>

@@ -10,7 +10,7 @@ function ReleaseNotes() {
         <meta name="description" content="Project release notes" />
         <link rel="canonical" href="https://designsystem.columbia.edu/contribute" />
       </Helmet>
-      <div className="ds-masthead pl-md-5">
+      <div className="ds-masthead">
         <h1>Release Notes</h1>
         
         <h2>Columbia Design System 1.0</h2>
