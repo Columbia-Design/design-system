@@ -1,7 +1,9 @@
 //@import 'node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 
+@import 'cu-colors'; // this needs to be first to override bootstrap colors
+
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
-@import 'cu_includes'; //component styles
+@import 'cu_includes'; // component styles; this needs to be last to override bootstrap styles
