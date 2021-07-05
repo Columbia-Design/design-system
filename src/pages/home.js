@@ -20,7 +20,7 @@ function Home() {
         <link rel="canonical" href="https://brand.columbia.edu" />
       </Helmet>
       <div className="container-fullbleed mb-4">
-        <Hero class="hero-default" image={home_flag} alt="Picture of Campus" heading="" text="Guidelines and best practices that promote a unified institutional identity and leverage Columbia's name, reputation, and trademarks in support of the University mission" cta="Download a Logo" ctalink="https://downloads.visualidentity.columbia.edu/"/>
+        <Hero class="hero-default" image={home_flag} alt="Columbia University flag flaps in the wind" heading="" text="Guidelines and best practices that promote a unified institutional identity and leverage Columbia's name, reputation, and trademarks in support of the University mission" cta="Download a Logo" ctalink="https://downloads.visualidentity.columbia.edu/"/>
       </div>
 			<div className="container-fluid px-0">
         <div className="row">
@@ -44,8 +44,8 @@ function Home() {
           </div>
           <div className="col-md-4">
             <h3>Who</h3>
-            <p>University groups collaborated to build this system: <a href="https://cuit.columbia.edu">Columbia University Information Technology</a>, <a href="https://communications.news.columbia.edu">Office of Communications and Public Affairs</a>, and <a href="https://creative.columbia.edu">Columbia Creative</a>.</p>
-            <p>We’re always looking for partners; <Link to="/contribute">learn how to contribute to the system</Link>.</p>
+            <p>Three University groups collaborated on this project: <a href="https://cuit.columbia.edu">Columbia University Information Technology</a>, <a href="https://communications.news.columbia.edu">Office of Communications and Public Affairs</a>, and <a href="https://creative.columbia.edu">Columbia Creative</a>.</p>
+            <p>But we’re always looking for partners; <Link to="/contribute">learn how to contribute</Link>.</p>
           </div>
           <div className="col-md-4">
             <h3>What</h3>
@@ -54,7 +54,7 @@ function Home() {
           </div>
           <div className="col-md-4">
             <h3>Why</h3>
-            <p>It’s free. Columbia Design System complies with University branding, development, security, and accessibility policies. Utilizing it means saving time and money on design, development, branding, and user testing. And it’s so much easier than starting from scratch.</p>
+            <p>It’s easy. It’s fast. It’s free. Columbia Design System complies with University branding, development, security, and accessibility policies. Utilizing it means saving time and money on design, development, branding, and user testing. And it’s so much easier than starting from scratch.</p>
           </div>
         </div>
         <div className="row text-center justify-content-center font-size-sm">
@@ -64,6 +64,15 @@ function Home() {
           <div className="col-6 col-sm-4 col-md-3 col-lg-2">
             <div className="card border-0">
               <img src={icon_crown} className="card-img-top" alt="crown"/>
+              <div className="card-body p-0">
+                <h3 className="h6 card-title mb-0"><a href="https://downloads.visualidentity.columbia.edu/">Download Logo</a></h3>
+                <p className="card-text">Faculty and staff can use their UNI to login and download approved branding for Columbia-related projects.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div className="card border-0">
+              <img src={icon_design} className="card-img-top" alt="pen"/>
               <div className="card-body p-0">
                 <h3 className="h6 card-title mb-0"><a href="mailto:creative@columbia.edu">Request a Custom Logo</a></h3>
                 <p className="card-text">Ask us to create an identity for your office, department, or research center. Free to those on the Morningside campus.</p>
@@ -75,7 +84,7 @@ function Home() {
               <img src={icon_design} className="card-img-top" alt="pen"/>
               <div className="card-body p-0">
                 <h3 className="h6 card-title mb-0"><a href="mailto:creative@columbia.edu">Design Services</a></h3>
-                <p className="card-text">Contact Columbia Creative for design services.</p>
+                <p className="card-text">Columbia Creative is the creative and strategic communications group responsible for stewarding the University brand. Contact us for print and digital design, branding, and ad placement.</p>
               </div>
             </div>
           </div>
@@ -96,16 +105,7 @@ function Home() {
                 <p className="card-text">Find out who to ask about using the University identity on your conference poster or other academic project.</p>
               </div>
             </div>
-          </div>
-          <div className="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div className="card border-0">
-              <img src={icon_mail} className="card-img-top" alt="envelope"/>
-              <div className="card-body p-0">
-                <h3 className="h6 card-title mb-0"><a href="mailto:creative@columbia.edu">Order Stationery</a></h3>
-                <p className="card-text">Order letterhead, business cards, or other stationery getting expert advice on design and free branding services.</p>
-              </div>
-            </div>
-          </div>
+          </div>  
         </div>
       </div>
       <div className="mt-5 mb-3">

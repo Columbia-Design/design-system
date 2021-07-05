@@ -71,7 +71,7 @@ class Accordions extends React.Component {
 			<p>An accordion is a vertical list of items, including text, tables, or images, in expandable tabs, one item per tab. The default behavior expands the first item with other items collapsed and displays the items in the order they are entered. The list can also be displayed as a numbered list. Users can expand or contract an accordion with one click.</p>
 			
 			<h2>Usage</h2>
-			<p>Use alerts to communicate deadlines, changes to important information, and emergencies. But use them sparingly—if users become accustomed to seeing an alert frequently, they may become desensitized to it.</p>
+			<p>Use accordions to display instructions, sections of similarly formatted content, frequently asked questions, and other lists.</p>
 			
 			<h2>Examples</h2>
 			<h3>Simple Accordion</h3>

@@ -1,8 +1,10 @@
 // this file exports pages and custom components as one global variable
 import Home from "./pages/home";
 import About from "./pages/about";
-import GettingStarted from "./pages/gettingstarted";
+import Guidelines from "./pages/guidelines";
 import Developer from "./pages/developer";
+import Designer from "./pages/designer";
+import Branding from "./pages/branding";
 import Accordions from "./pages/accordions";
 import Buttons from "./pages/buttons";
 import Heroes from "./pages/heroes";
@@ -33,48 +35,35 @@ const Global = {
 			'display': false
 		},
 		{
-			'name': "Getting Started",
-			'component': GettingStarted,
-			'path': '/start',
+			'name': "Guidelines",
+			'component': Guidelines,
+			'path': '/guidelines',
 			'exact': false,
 			'display': true,
 			'items': [{
-				'name': "Getting Started",
-				'component': GettingStarted,
-				'path': '/start',
+				'name': "Guidelines",
+				'component': Guidelines,
+				'path': '/guidelines',
 				'exact': true,
 			}, {
 				'name': "Developer Guide",
 				'component': Developer,
-				'path': '/start/developer',
+				'path': '/guidelines/developer',
+				'exact': false,
+			}, {
+				'name': "Designer’s Guide",
+				'component': Designer,
+				'path': '/guidelines/designer',
+				'exact': false,
+			}, {
+				'name': "Branding and Identity Guidelines",
+				'component': Branding,
+				'path': '/guidelines/branding',
 				'exact': false,
 			}],
 		},
 		{
-			'name': "Elements",
-			'component': Typography,
-			'path': '/content',
-			'exact': false,
-			'display': true,
-			'items': [{
-				'name': "Typography",
-				'component': Typography,
-				'path': '/content',
-				'exact': true,
-			}, {
-				'name': "Images",
-				'component': Images,
-				'path': '/content/images',
-				'exact': false,
-			}, {
-				'name': "Tables",
-				'component': Tables,
-				'path': '/content/tables',
-				'exact': false,
-			}],
-		},
-		{
-			'name': "Components",
+			'name': "Elements and Components",
 			'component': Accordions,
 			'path': '/components',
 			'exact': false,
@@ -116,6 +105,12 @@ const Global = {
 				'exact': false,
 			},
 			{
+				'name': "Images",
+				'component': Images,
+				'path': '/content/images',
+				'exact': false,
+			},
+			{
 				'name': "Modal",
 				'component': Modal,
 				'path': '/components/modal',
@@ -140,16 +135,34 @@ const Global = {
 				'exact': false,
 			},
 			{
+				'name': "Tables",
+				'component': Tables,
+				'path': '/content/tables',
+				'exact': false,
+			},
+			{
 				'name': "Toggle Switch",
 				'component': Sliders,
 				'path': '/components/sliders',
 				'exact': false,
 			},
 			{
+				'name': "Typography",
+				'component': Typography,
+				'path': '/content',
+				'exact': true,
+			},
+			{
 				'name': "Icons",
 				'component': Icons,
 				'path': '/components/icons',
 				'exact': false,
+			},
+			{
+				'name': "Typography",
+				'component': Typography,
+				'path': '/content',
+				'exact': true,
 			}
 		]},
 		{
